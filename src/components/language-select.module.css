@@ -1,0 +1,22 @@
+.lang {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    padding: 1rem;
+    margin: 1rem;
+}
+.en,
+.hu {
+    font-size: larger;
+    padding: 1rem;
+    color: gold;
+    text-decoration: none;
+}
+.en:hover,
+.hu:hover {
+    color: whitesmoke;
+}
+.en:active,
+.hu:active {
+    color: burlywood;
+}

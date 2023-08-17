@@ -1,0 +1,17 @@
+.mainContainer {
+    position: absolute; top: 0; right: 0;
+    background-color: rgba(34, 32, 19, 0.372);
+    height: 100vh;
+    width: 15vw;
+    border-color: black 3px solid;
+    display: flex;
+    flex-direction: column;
+
+}
+
+li {
+    padding: 2rem 0;
+    font-size: 3rem;
+    list-style: none;
+    color: rgb(205, 179, 36);
+}
