@@ -1,0 +1,8 @@
+.main {
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 5.7rem;
+    height: 5.7rem;
+    margin: auto;
+}

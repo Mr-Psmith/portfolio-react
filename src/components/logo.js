@@ -4,7 +4,7 @@ function Logo() {
     return (
         <>
             <div className={classes.main}>
-                <p>PS</p>
+                
             </div>
         </>
     );

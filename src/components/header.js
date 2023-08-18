@@ -14,7 +14,7 @@ function Header () {
                 <NameDesignation />
                 <Logo />
                 <LanguageSelect />
-                <Navi />
+
             </div>
         </>
     );

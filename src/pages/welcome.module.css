@@ -1,0 +1,32 @@
+.main {
+    background-color: rgba(34, 32, 19, 0.372);
+    width: 70%;
+    height: 70%;
+    padding: 2rem 0;
+    margin: auto;
+    border-radius: 15px;
+}
+.main h1 {
+    font-size: 2.5rem;
+}
+.main h3 {
+    font-size: 2rem;
+}
+.main p {
+    font-size: 1.5rem;
+}
+.main h4 {
+    font-size: 2rem;
+}
+.main a {
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(13, 72, 155);
+    background-color: rgba(156, 134, 8, 0.085);
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+/* a:hover {
+    transform:translateY(2rem);
+} */

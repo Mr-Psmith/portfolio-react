@@ -1,15 +1,15 @@
-import classes from "./about.module.css";
+import classes from "./connect.module.css";
 
-function About() {
+function Connect() {
     return (
         <>
             <div className={classes.main}>
                 <p className="App-notlink">
-                About Me
+                Connects
                 </p>
             </div>
         </>
     );
 };
 
-export default About;
+export default Connect;

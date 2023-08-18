@@ -1,23 +1,25 @@
 .App {
+  background-image: linear-gradient(rgba(5.1, 23.5, 23.5, 0.933), rgba(5.1, 23.5, 23.5, 0.933)),url("./img/backgr.jpg");
+  background-size: cover;
   text-align: center;
   height: 100vh;
   margin: 0 auto;
   padding: 0;
   display: grid;
   grid-template-rows: 15% 75% 10%;
-  background-image: url("./backgr.jpg");
-}
+  color: rgb(176, 136, 7);
+}  
 
 section {
   margin: auto 0;
 }
 
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-notlink {
   font-size: 3rem;
@@ -31,12 +33,3 @@ section {
 .App-link:active {
   color: #282c34;
 }
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
