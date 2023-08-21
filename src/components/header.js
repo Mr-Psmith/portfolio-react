@@ -3,7 +3,6 @@ import NameDesignation from "./name-designation";
 
 import classes from "./header.module.css"
 import Logo from "./logo";
-import Navi from "./right-navi";
 
 
 function Header () {
@@ -14,7 +13,6 @@ function Header () {
                 <NameDesignation />
                 <Logo />
                 <LanguageSelect />
-
             </div>
         </>
     );

@@ -10,7 +10,7 @@ function Navi(props) {
                     <li className={classes.li} onClick={props.worksHandlerPr}>Works</li>
                     <li className={classes.li} onClick={props.aboutHandlerPr}>About</li>
                     <li className={classes.li} onClick={props.connectHandlerPr}>Connect</li>
-                    <a href="https://psancthus.com/" className={classes.a}>OldSite</a>
+                    {/* <a href="https://psancthus.com/" className={classes.a}>OldSite</a> */}
                 </ul>
             </div>
         </>

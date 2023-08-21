@@ -3,17 +3,21 @@
   background-size: cover;
   text-align: center;
   height: 100vh;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   display: grid;
-  grid-template-rows: 15% 75% 10%;
+  grid-template-columns: 90% 10%;
   color: rgb(176, 136, 7);
-}  
-
+}
+.app90 {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 15% 75% 10%;
+  margin: 0;
+}
 section {
   margin: auto 0;
 }
-
 
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {

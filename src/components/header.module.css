@@ -1,8 +1,5 @@
 .main {
     display: grid;
-    grid-template-columns: 25% 55% 10% 10%;
-    /* display: flex;
-    justify-content: space-between; */
+    grid-template-columns: 35% 40% 25%;
     margin: 0 auto;
-
 }
