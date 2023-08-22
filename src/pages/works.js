@@ -5,9 +5,6 @@ import tan from "../img/tan.png";
 
 function Works(props) {
 
-    const tanIframe =  <iframe src="https://theorianatura.psancthus.com/" title="111" className="frontdrop frontdrop1"></iframe>;
-
-
   return (
     <>
       <div className={classes.main}>
@@ -16,10 +13,10 @@ function Works(props) {
         <div className={classes.unvisibleblock}>
           <div className={classes.block1}>
             <div className={classes.work1}>
-              <a href={tanIframe} className="subblock subblock1 subblock-left">
+              <div className={classes.image}>
                 <img src={tan} className={classes.tanC} alt="" onClick={props.tanPrHandler}></img>
-              </a>
-              <div className="subblock1-descript subblock-descript">
+              </div>
+              <div className={classes.descript}>
                 <p>
                   This site is the prototype copy of my Theoria Natura webmagazine, a
                   small webmagazin which I made in 2022 as part of my resume. It
@@ -28,14 +25,14 @@ function Works(props) {
               </div>
             </div>
             <div className={classes.work2}>
-            <a href="..." className="subblock subblock2 subblock-right">
+            <div className={classes.image} onClick={props.openOPHandlerPr}>
                 <img
                   src={oldPortf}
                   className={classes.startAzoresC}
                   alt=""
                 ></img>
-              </a>
-              <div className="subblock2-descript subblock-descript subblock-descript__upper">
+              </div>
+              <div className={classes.descript}>
                 <p>
                   This is my old portfolio written in Javascript, CSS.
                 </p>

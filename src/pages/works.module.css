@@ -23,13 +23,19 @@
 }
 .main img {
     width: 39vw;
-    padding: 0.5vw;
+    /* height: 31.5vh; */
     border-radius: 15px;
 }
 .main img:hover {
     transform: scale(1.03);
 }
-
+.descript {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+}
 .main p {
     width: 30vw;
+    text-align: center;
 }

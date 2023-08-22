@@ -2,7 +2,7 @@
     position: absolute; top: 0; right: 0;
     height: 100vh;
     width: 11vw;
-    /* border-left: black 10px solid; */
+    border-left: rgb(127, 99, 5) 7px solid;
     display: flex;
     flex-direction: column;
 
