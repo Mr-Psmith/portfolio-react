@@ -25,6 +25,7 @@
     width: 39vw;
     /* height: 31.5vh; */
     border-radius: 15px;
+    cursor: pointer;
 }
 .main img:hover {
     transform: scale(1.03);

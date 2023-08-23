@@ -12,11 +12,16 @@ import Modal from "./components/utility/modal";
 import Backdrop from "./components/utility/backdrop";
 import IframeOP from "./components/iframe/iframe-oldPortfolio";
 import IframeTan from "./components/iframe/iframe-tan";
+import Close from "./components/utility/close-x";
+import Transition from "react-transition-group/Transition";
 
 function App() {
   let welcomeScreen = <Welcome />;
-  let worksScreen = <Works tanPrHandler={tanHandler} openOPHandlerPr={openOPHandler} />;
+  let worksScreen = (
+    <Works tanPrHandler={tanHandler} openOPHandlerPr={openOPHandler} />
+  );
 
+  const [closeX, setCloseX] = useState(false);
   const [iframeOP, setIframeOP] = useState("");
   const [iframeTan, setIframeTan] = useState("");
   const [modal, setModal] = useState(false);
@@ -40,19 +45,29 @@ function App() {
     setModal(true);
     setBackdrop(true);
     setIframeOP(true);
-  };
-
+    setCloseX(true);
+  }
   function tanHandler() {
     setModal(true);
     setBackdrop(true);
     setIframeTan(true);
+    setCloseX(true);
+  }
+
+  function closeAllHandler() {
+    setBackdrop(false);
+    setModal(false);
+    setIframeOP(false);
+    setIframeTan(false);
+    setCloseX(false);
   }
   function closeBackdrHandler() {
     setBackdrop(false);
     setModal(false);
     setIframeOP(false);
     setIframeTan(false);
-  };
+    setCloseX(false);
+  }
 
   return (
     <div className={classes.App}>
@@ -63,9 +78,19 @@ function App() {
         <section className={classes.body}>
           {switchCards}
           {modal ? <Modal /> : ""}
-          {backdrop ? <Backdrop closeBackdrHandlerPr={closeBackdrHandler}/> : ""}
+          {backdrop ? (
+            <Backdrop closeBackdrHandlerPr={closeBackdrHandler} />
+          ) : (
+            ""
+          )}
           {iframeOP ? <IframeOP /> : ""}
           {iframeTan ? <IframeTan /> : ""}
+          {closeX ? <Close closeAllHandlerPr={closeAllHandler} /> : ""}
+          {/* <Transition in={closeX} timeout={300}>
+            {(state) => (
+              <Close closeAllHandlerPr={closeAllHandler} closepr={state} />
+            )}
+          </Transition> */}
         </section>
         <section className={classes.footer}>
           <Footer />
