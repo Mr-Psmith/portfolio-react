@@ -19,7 +19,20 @@
 .main:active {
     background-color: rgb(0, 255, 247);
 }
-
+.closeX-enter {
+    opacity: 0;
+  }
+  .closeX-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+  }
+  .closeX-exit {
+    opacity: 1;
+  }
+  .closeX-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+  }
 .closed {
     /* transform: translateY(0); */
 }

@@ -83,9 +83,9 @@ function App() {
           ) : (
             ""
           )}
-          {iframeOP ? <IframeOP /> : ""}
+          {iframeOP ? <IframeOP iframeOPPr={iframeOP} /> : ""}
           {iframeTan ? <IframeTan /> : ""}
-          {closeX ? <Close closeAllHandlerPr={closeAllHandler} /> : ""}
+          {closeX ? <Close closeXPr={closeX} closeAllHandlerPr={closeAllHandler} /> : ""}
           {/* <Transition in={closeX} timeout={300}>
             {(state) => (
               <Close closeAllHandlerPr={closeAllHandler} closepr={state} />

@@ -1,0 +1,25 @@
+.main {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    height: 80vh;
+    width: 80vw;
+    box-sizing: border-box;
+    margin: auto;
+    z-index: 201;
+    border: rgb(127, 99, 5) 3px solid;
+}
+.CssTr-enter {
+    opacity: 0;
+  }
+  .CssTr-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+  }
+  .CssTr-exit {
+    opacity: 1;
+  }
+  .CssTr-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+  }

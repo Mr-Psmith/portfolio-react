@@ -1,13 +1,17 @@
-import classes from "./iframe.module.css";
+//import classes from "./iframe.module.css"; className={classes.main}
+import "./iframe.css";
+import CSSTransition from "react-transition-group/CSSTransition";
 
-function IframeOP() {
-    return (
-        <>
-            <div className={classes.main}>
-                <iframe src="https://psancthus.com/" title="oldPortf" className={classes.main}></iframe>
-            </div>
-        </>
-    );
-};
+function IframeOP(props) {
+  return (
+    <>
+      <CSSTransition in={props.iframeOPPr} timeout={300} classNames="CssTr" >
+        <div  className="main">
+          <iframe src="https://psancthus.com/" title="oldPortf"></iframe>
+        </div>
+      </CSSTransition>
+    </>
+  );
+}
 
 export default IframeOP;
