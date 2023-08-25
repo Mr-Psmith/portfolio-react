@@ -18,15 +18,20 @@
 .main h4 {
     font-size: 2rem;
 }
-.main a {
+.main button {
     font-size: 2rem;
     text-decoration: none;
     font-weight: bold;
-    color: rgb(13, 72, 155);
-    background-color: rgba(156, 134, 8, 0.085);
+    color: whitesmoke;
+    background-color: rgba(160, 128, 31, 0.586);
     padding: 0.5rem;
     border-radius: 10px;
+    cursor: pointer;
 }
-/* a:hover {
-    transform:translateY(2rem);
-} */
+.main button:hover {
+    color: rgba(160, 128, 31, 0.586);
+    background-color: whitesmoke;
+}
+.main button:active {
+    transform:translateY(0.2rem);
+}

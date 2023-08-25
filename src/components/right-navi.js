@@ -1,4 +1,5 @@
 import classes from "./right-navi.module.css";
+import facPic from "../img/fac.jpg";
 
 function Navi(props) {
  
@@ -11,6 +12,7 @@ function Navi(props) {
                     <li className={classes.li} onClick={props.aboutHandlerPr}>About</li>
                     <li className={classes.li} onClick={props.connectHandlerPr}>Connect</li>
                     {/* <a href="https://psancthus.com/" className={classes.a}>OldSite</a> */}
+                    <li><img src={facPic} className={classes.facPic} alt=""></img></li>
                 </ul>
             </div>
         </>

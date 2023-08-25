@@ -1,50 +1,42 @@
 import classes from "./works.module.css";
+import CSSTransition from "react-transition-group/CSSTransition";
 
 import oldPortf from "../img/works-oldPortf.jpg";
 import tan from "../img/tan.png";
 
 function Works(props) {
-
+  const animationTiming = { enter: 400, exit: 1000 };
   return (
     <>
-      <div className={classes.main}>
-        <h1>Here are some of my works:</h1>
-        <h4>You can check them out by clicking the pictures</h4>
-        <div className={classes.unvisibleblock}>
-          <div className={classes.block1}>
-            <div className={classes.work1}>
-              <div className={classes.image}>
-                <img src={tan} className={classes.tanC} alt="" onClick={props.tanPrHandler}></img>
+      <CSSTransition mountOnEnter unmountOnExit in={true} timeout={animationTiming} classNames={classes.slides}>
+        <div className={classes.main}>
+          <h1>Here are some of my works:</h1>
+          <h4>You can check them out by clicking the pictures</h4>
+          <div className={classes.unvisibleblock}>
+            <div className={classes.block1}>
+              <div className={classes.work1}>
+                <div className={classes.image}>
+                  <img src={tan} className={classes.tanC} alt="" onClick={props.tanPrHandler}></img>
+                </div>
+                <div className={classes.descript}>
+                  <p>This site is the prototype copy of my Theoria Natura webmagazine, a small webmagazin which I made in 2022 as part of my resume. It uses pure Javascript, CSS, Html.</p>
+                </div>
               </div>
-              <div className={classes.descript}>
-                <p>
-                  This site is the prototype copy of my Theoria Natura webmagazine, a
-                  small webmagazin which I made in 2022 as part of my resume. It
-                  uses pure Javascript, CSS, Html.
-                </p>
-              </div>
-            </div>
-            <div className={classes.work2}>
-            <div className={classes.image} onClick={props.openOPHandlerPr}>
-                <img
-                  src={oldPortf}
-                  className={classes.startAzoresC}
-                  alt=""
-                ></img>
-              </div>
-              <div className={classes.descript}>
-                <p>
-                  This is my old portfolio written in Javascript, CSS.
-                </p>
+              <div className={classes.work2}>
+                <div className={classes.image} onClick={props.openOPHandlerPr}>
+                  <img src={oldPortf} className={classes.startAzoresC} alt=""></img>
+                </div>
+                <div className={classes.descript}>
+                  <p>This is my old portfolio written in Javascript, CSS.</p>
+                </div>
               </div>
             </div>
-          </div>
 
-         {/*  <div class="smiley-box">
+            {/*  <div class="smiley-box">
             <img className={classes.smiley} src="" alt=""></img>
           </div> */}
 
-          {/* <div className={classes.block2}>
+            {/* <div className={classes.block2}>
             <div class="block3 block">
               <button class="subblock subblock3 subblock-left">
                 <img
@@ -74,8 +66,9 @@ function Works(props) {
               </button>
             </div>
           </div> */}
+          </div>
         </div>
-      </div>
+      </CSSTransition>
     </>
   );
 }

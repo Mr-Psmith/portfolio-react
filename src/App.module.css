@@ -9,6 +9,13 @@
   grid-template-columns: 90% 10%;
   color: rgb(176, 136, 7);
 }
+a {
+  color: rgb(176, 136, 7);
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
 .app90 {
   height: 100vh;
   display: grid;

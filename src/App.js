@@ -13,14 +13,16 @@ import Backdrop from "./components/utility/backdrop";
 import IframeOP from "./components/iframe/iframe-oldPortfolio";
 import IframeTan from "./components/iframe/iframe-tan";
 import Close from "./components/utility/close-x";
-import Transition from "react-transition-group/Transition";
+//import Transition from "react-transition-group/Transition";
+import Contact from "./components/contact";
 
 function App() {
-  let welcomeScreen = <Welcome />;
+  let welcomeScreen = <Welcome contactButtonHandlerPr={contactButtonHandler} />;
   let worksScreen = (
     <Works tanPrHandler={tanHandler} openOPHandlerPr={openOPHandler} />
   );
 
+  const [contactBox, setContactBox] = useState(false);
   const [closeX, setCloseX] = useState(false);
   const [iframeOP, setIframeOP] = useState("");
   const [iframeTan, setIframeTan] = useState("");
@@ -67,7 +69,13 @@ function App() {
     setIframeOP(false);
     setIframeTan(false);
     setCloseX(false);
+    setContactBox(false);
   }
+  function contactButtonHandler() {
+    setContactBox(true);
+    setBackdrop(true);
+    console.log("fuckYouVsCodeWithYourStupidShitsSometimes")
+  };
 
   return (
     <div className={classes.App}>
@@ -91,6 +99,8 @@ function App() {
               <Close closeAllHandlerPr={closeAllHandler} closepr={state} />
             )}
           </Transition> */}
+          {contactBox ? <Contact /> : ""}
+          
         </section>
         <section className={classes.footer}>
           <Footer />

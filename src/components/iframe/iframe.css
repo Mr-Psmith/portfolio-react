@@ -1,4 +1,7 @@
-.main {
+/* .main-old-portf::before {
+  transform:translateX(-100vw);
+} */
+.main-old-portf {
     position: fixed;
     top: 10%;
     left: 10%;
@@ -8,18 +11,50 @@
     margin: auto;
     z-index: 201;
     border: rgb(127, 99, 5) 3px solid;
+    /* animation: openIframes 4s ease-out forwards; */
 }
+
+.open {
+  animation: openIframes 0.4s ease-out forwards;
+}
+.closed {
+  animation: closeIframes 0.4s ease-out forwards;
+}
+
 .CssTr-enter {
     opacity: 0;
   }
   .CssTr-enter-active {
+    animation: openIframes 0.4s ease-out forwards;
     opacity: 1;
-    transition: opacity 200ms;
   }
   .CssTr-exit {
     opacity: 1;
   }
   .CssTr-exit-active {
+    animation: closeIframes 0.4s ease-out forwards;
     opacity: 0;
-    transition: opacity 200ms;
+  } 
+
+@keyframes openIframes {
+  0% {
+    transform:translateX(0);
   }
+  50% {
+    transform:translateX(50vw);
+  }
+  100% {
+    transform:translateX(100vw);
+  }
+}
+@keyframes closeIframes {
+  0% {
+    transform:translateX(0);
+  }
+  50% {
+    transform:translateX(-50vw);
+  }
+  100% {
+    transform:translateX(-100vw);
+  }
+}

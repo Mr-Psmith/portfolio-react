@@ -24,7 +24,6 @@
     border-radius: 10px;
     padding: 0.5rem 0.5rem;
     font-size: 1.5rem;
-    list-style: none;
     color: rgb(176, 136, 7);
     cursor: pointer;
 }
@@ -44,4 +43,18 @@
     text-decoration: none;
     color: rgb(176, 136, 7);
     cursor: pointer;
+}
+
+.facPic {
+    width: 3vw;
+    background-color: aliceblue;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 1vh;
+    right: 1vw;
+    cursor: pointer;
+}
+.facPic:hover {
+    background-color: rgba(18, 23, 162, 0.559);
+    transform: scale(1.1);
 }
