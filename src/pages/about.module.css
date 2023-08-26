@@ -1,8 +1,84 @@
-.main {
+.aboutMain {
+    box-sizing: border-box;
     background-color: rgba(34, 32, 19, 0.372);
-    width: 85vw;
-    height: 65vh;
-    padding: 1rem 0;
+    width: 80vw;
+    height: 72vh;
     margin: auto;
     border-radius: 15px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.aboutBlock1 {
+    margin: auto;
+}
+
+.aboutBlock1 h1 {
+    text-align: left;
+    font-size: 1.7rem;
+    margin-left: 4rem;
+}
+.aboutBlock1 p {
+    box-sizing: border-box;
+    padding: 0.3rem 3rem;
+    font-size: 1.3rem;
+    text-align: left;
+    line-height: 2rem;
+}
+.aboutBlock1 button {
+    margin: 4rem 0;
+    padding: 0.4rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.aboutBlock2 {
+    border-left: rgb(127, 99, 5) 7px solid;
+    margin: 0 auto;
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content:center; */
+}
+.aboutBlock2 ul {
+    margin: 0 auto;
+}
+.aboutBlock2 h1 {
+    font-size: 1.7rem;
+    margin: 2rem auto;
+    margin-top: 4rem;
+}
+.aboutBlock2 li {
+    box-sizing: border-box;
+    /* padding-left: 7rem; */
+    margin-left: 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: left;
+    line-height: 3rem;
+}
+
+@media(max-width: 1260px) {
+    .aboutMain h1 {
+        font-size: 1.4rem;
+    }
+    .aboutBlock1 p {
+        padding: 0.3rem 3rem;
+        font-size: 1rem;
+        text-align: left;
+        line-height: 1.4rem;
+    }
+    .aboutBlock1 button {
+        margin-top: 1.4rem;
+        padding: 0.3rem;
+        font-size: 1.4rem;
+        font-weight: 700;
+        border-radius: 10px;
+    }
+    
+    .aboutBlock2 li {
+        font-size: 0.9rem;
+        text-align: left;
+        line-height: 1.7rem;
+    }
 }

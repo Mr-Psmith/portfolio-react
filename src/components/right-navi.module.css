@@ -1,11 +1,12 @@
 .mainContainer {
-    position: absolute; top: 0; right: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
     height: 100vh;
     width: 11vw;
     border-left: rgb(127, 99, 5) 7px solid;
     display: flex;
     flex-direction: column;
-
 }
 
 .ul {
@@ -15,7 +16,6 @@
     flex-direction: column;
     /* justify-content:baseline;
     align-self:flex-end; */
-    
 }
 
 .li {
@@ -29,7 +29,7 @@
 }
 .li:hover,
 .a:hover {
-    transform:translateY(0.2rem);
+    transform: translateY(0.2rem);
 }
 .a {
     position: relative;
@@ -57,4 +57,55 @@
 .facPic:hover {
     background-color: rgba(18, 23, 162, 0.559);
     transform: scale(1.1);
+}
+.socalPics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 1rem;
+    width: 10.5%;
+    margin: 0 0.25rem;
+}
+.socalPics a {
+    width: 2rem;
+    display: flex;
+    flex-direction: row;
+
+    /* margin: 0 auto; */
+}
+.fac,
+.inst,
+.github,
+.twitter {
+    width: 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.fac:hover,
+.inst:hover,
+.twitter:hover {
+    background-color: whitesmoke;
+}
+.github:hover {
+    background-color: blue;
+}
+.github,
+.twitter {
+    border-radius: 200px;
+}
+
+@media (max-width: 1200px) {
+    .socalPics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fac,
+    .inst,
+    .github,
+    .twitter {
+        width: 3rem;
+        padding: 0.4rem 0;
+    }
 }

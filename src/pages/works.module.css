@@ -3,9 +3,10 @@
     animation: closeIframes 4s ease-out forwards;
 } */
 .main {
+  box-sizing: border-box;
   background-color: rgba(34, 32, 19, 0.372);
-  width: 85vw;
-  height: 65vh;
+  width: 80vw;
+  height: 72vh;
   padding: 1rem 0;
   margin: auto;
   border-radius: 15px;
@@ -21,7 +22,7 @@
   font-size: 2.5rem;
 }
 .main h4 {
-  font-size: 0.8rem;
+  font-weight: 100;
 }
 
 .block1 {
@@ -33,7 +34,7 @@
   justify-content: space-around;
 }
 .main img {
-  width: 39vw;
+  width: 37vw;
   /* height: 31.5vh; */
   border-radius: 15px;
   cursor: pointer;
@@ -50,6 +51,7 @@
 .main p {
   width: 30vw;
   text-align: center;
+  font-size: 1.2rem;
 }
 
 /* .slides-enter {

@@ -1,0 +1,109 @@
+.contactMain {
+    box-sizing: border-box;
+    background-color: rgba(34, 32, 19, 0.372);
+    width: 80vw;
+    height: 72vh;
+    margin: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding: 3rem; */
+    font-size: 1.4rem;
+    text-align: left;
+    z-index: 201;
+}
+.contactUnvisibleblock1,
+.contactUnvisibleblock2 {
+    box-sizing: border-box;
+    padding: 3rem;
+    width: 50%;
+}
+.contactUnvisibleblock1 {
+    max-width: 30rem;
+    margin: auto;
+}
+.contactMain input,
+.contactMain textarea {
+    background-color: rgba(5.1, 23.5, 23.5, 0.933);
+    color: whitesmoke;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+.contactMain textarea {
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+.contactMain input:focus-visible,
+.contactMain textarea:focus-visible {
+    border-color: red;
+}
+
+.contactUnvisibleblock1_1 {
+    padding-bottom: 1rem;
+}
+.contactUnvisibleblock1_1 input {
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+}
+.formContactMessageTextarea {
+    margin-top: 0.3rem;
+    width: 100%;
+    max-width: 100%;
+    height: 13rem;
+    max-height: 20rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.contactFormButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.contactFormButtons button {
+    background-color: rgb(176, 136, 7);
+    font-size: 1.5rem;
+    border-radius: 5px;
+    color: whitesmoke;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+.contactFormButtons button:hover {
+    background-color: whitesmoke;
+    color: rgb(176, 136, 7);
+}
+
+.contactUnvisibleblock2 {
+    padding-bottom: 3rem;
+    text-align: center;
+    border-left: rgb(127, 99, 5) 7px solid;
+}
+.contactUnvisibleblock2 .picPlus {
+    width: 17rem;
+    margin: 2rem auto;
+}
+.contactUnvisibleblock2 .fac,
+.contactUnvisibleblock2 .inst,
+.contactUnvisibleblock2 .github,
+.contactUnvisibleblock2 .twitter {
+    width: 3rem;
+    margin: 0 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.contactUnvisibleblock2 .fac:hover,
+.contactUnvisibleblock2 .inst:hover,
+.contactUnvisibleblock2 .twitter:hover {
+    background-color: whitesmoke;
+}
+.contactUnvisibleblock2 .github:hover {
+    background-color: blue;
+}
+.contactUnvisibleblock2 .github,
+.contactUnvisibleblock2 .twitter {
+    border-radius: 200px;
+}

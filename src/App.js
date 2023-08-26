@@ -5,7 +5,7 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import Navi from "./components/right-navi";
 import About from "./pages/about";
-import Connect from "./pages/connect";
+//import Connect from "./pages/connect";
 import Welcome from "./pages/welcome";
 import Works from "./pages/works";
 import Modal from "./components/utility/modal";
@@ -14,15 +14,15 @@ import IframeOP from "./components/iframe/iframe-oldPortfolio";
 import IframeTan from "./components/iframe/iframe-tan";
 import Close from "./components/utility/close-x";
 //import Transition from "react-transition-group/Transition";
-import Contact from "./components/contact";
+import Contact from "./pages/contact";
 
 function App() {
-  let welcomeScreen = <Welcome contactButtonHandlerPr={contactButtonHandler} />;
-  let worksScreen = (
-    <Works tanPrHandler={tanHandler} openOPHandlerPr={openOPHandler} />
-  );
+  const welcomeScreen = <Welcome contactButtonHandlerPr={contactButtonHandler} />;
+  const worksScreen = <Works tanPrHandler={tanHandler} openOPHandlerPr={openOPHandler} />;
+  const aboutScreen = <About contactButtonHandlerPr={contactButtonHandler}/>;
+  const contactScreen = <Contact />;
 
-  const [contactBox, setContactBox] = useState(false);
+  //const [contactBox, setContactBox] = useState(false);
   const [closeX, setCloseX] = useState(false);
   const [iframeOP, setIframeOP] = useState("");
   const [iframeTan, setIframeTan] = useState("");
@@ -37,10 +37,10 @@ function App() {
     setSwitchCards(worksScreen);
   }
   function aboutHandler() {
-    setSwitchCards(<About />);
+    setSwitchCards(aboutScreen);
   }
   function connectHandler() {
-    setSwitchCards(<Connect />);
+    setSwitchCards(contactScreen);
   }
 
   function openOPHandler() {
@@ -69,12 +69,12 @@ function App() {
     setIframeOP(false);
     setIframeTan(false);
     setCloseX(false);
-    setContactBox(false);
+    //setContactBox(false);
   }
   function contactButtonHandler() {
-    setContactBox(true);
-    setBackdrop(true);
-    console.log("fuckYouVsCodeWithYourStupidShitsSometimes")
+    /* setContactBox(true);
+    setBackdrop(true); */
+    setSwitchCards(contactScreen);
   };
 
   return (
@@ -99,7 +99,7 @@ function App() {
               <Close closeAllHandlerPr={closeAllHandler} closepr={state} />
             )}
           </Transition> */}
-          {contactBox ? <Contact /> : ""}
+          {/* {contactBox ? <Contact /> : ""} */}
           
         </section>
         <section className={classes.footer}>
