@@ -17,10 +17,16 @@ import Close from "./components/utility/close-x";
 import Contact from "./pages/contact";
 
 function App() {
-  const welcomeScreen = <Welcome contactButtonHandlerPr={contactButtonHandler} />;
-  const worksScreen = <Works tanPrHandler={tanHandler} openOPHandlerPr={openOPHandler} />;
-  const aboutScreen = <About contactButtonHandlerPr={contactButtonHandler}/>;
-  const contactScreen = <Contact />;
+  const [welcomeSlide, setWelcomeSlide] = useState(true);
+  const [worksSlide, setWorksSlide] = useState(false);
+  const [aboutSlide, setAboutSlide] = useState(false);
+  const [contactSlide, setContactSlide] = useState(false);
+
+
+  const welcomeScreen = <Welcome contactButtonHandlerPr={contactButtonHandler} welcomeSlidePr={welcomeSlide}/>;
+  const worksScreen = <Works tanPrHandler={tanHandler} openOPHandlerPr={openOPHandler} worksSlidePr={worksSlide} />;
+  const aboutScreen = <About contactButtonHandlerPr={contactButtonHandler} aboutSlidePr={aboutSlide} />;
+  const contactScreen = <Contact contactSlidePr={contactSlide} />;
 
   //const [contactBox, setContactBox] = useState(false);
   const [closeX, setCloseX] = useState(false);
@@ -30,17 +36,34 @@ function App() {
   const [backdrop, setBackdrop] = useState(false);
   const [switchCards, setSwitchCards] = useState(welcomeScreen);
 
+
   function welcomeHandler() {
     setSwitchCards(welcomeScreen);
+    setWelcomeSlide(true);
+    setWorksSlide(false);
+    setAboutSlide(false);
+    setContactSlide(false);
   }
   function worksHandler() {
     setSwitchCards(worksScreen);
+    setWelcomeSlide(false);
+    setWorksSlide(true);
+    setAboutSlide(false);
+    setContactSlide(false);
   }
   function aboutHandler() {
     setSwitchCards(aboutScreen);
+    setWelcomeSlide(false);
+    setWorksSlide(false);
+    setAboutSlide(true);
+    setContactSlide(false);
   }
   function connectHandler() {
     setSwitchCards(contactScreen);
+    setWelcomeSlide(false);
+    setWorksSlide(false);
+    setAboutSlide(false);
+    setContactSlide(true);
   }
 
   function openOPHandler() {

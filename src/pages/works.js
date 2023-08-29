@@ -1,14 +1,15 @@
 import classes from "./works.module.css";
 import CSSTransition from "react-transition-group/CSSTransition";
+import "./transition.css";
 
 import oldPortf from "../img/works-oldPortf.jpg";
 import tan from "../img/tan.png";
 
 function Works(props) {
-  const animationTiming = { enter: 400, exit: 1000 };
+  const animationTiming = { enter: 400, exit: 400 };
   return (
     <>
-      <CSSTransition mountOnEnter unmountOnExit in={true} timeout={animationTiming} classNames={classes.slides}>
+      <CSSTransition mountOnEnter unmountOnExit in={props.worksSlidePr} timeout={animationTiming} classNames="slides">
         <div className={classes.main}>
           <h1>Here are some of my works:</h1>
           <h4>You can check them out by clicking the pictures</h4>
