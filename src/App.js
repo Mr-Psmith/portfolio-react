@@ -17,6 +17,8 @@ import Close from "./components/utility/close-x";
 import Contact from "./pages/contact";
 import ModalFrame from "./components/utility/modal-frame";
 
+//Add a onClick to the div above all the li-s in the nav for all the booleans in the menus
+//Az emailt meg másolósra?
 function App() {
     const [welcomeSlide, setWelcomeSlide] = useState(true);
     const [worksSlide, setWorksSlide] = useState(true);
@@ -43,7 +45,7 @@ function App() {
 
         setWelcomeSlide(true);
         setWorksSlide(false);
-        setAboutSlide(false);
+        setAboutSlide(true);
         setContactSlide(false);
     }
     function worksHandler() {
@@ -52,7 +54,7 @@ function App() {
 
         setWelcomeSlide(false);
         setWorksSlide(true);
-        setAboutSlide(false);
+        setAboutSlide(true);
         setContactSlide(false);
     }
     function aboutHandler() {
@@ -61,7 +63,7 @@ function App() {
 
         setWelcomeSlide(false);
         setWorksSlide(false);
-        setAboutSlide(true);
+        setAboutSlide(false);
         setContactSlide(false);
     }
     function connectHandler() {
@@ -70,7 +72,7 @@ function App() {
 
         setWelcomeSlide(false);
         setWorksSlide(false);
-        setAboutSlide(false);
+        setAboutSlide(true);
         setContactSlide(true);
     }
 
