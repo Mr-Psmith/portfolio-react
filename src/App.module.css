@@ -56,3 +56,14 @@ section {
 .App-link:active {
     color: #282c34;
 }
+
+
+
+.opened {
+    transition: transform 1s ease-in-out;
+    transform: translateX(0);
+  }
+  .closed {
+    transform: translateX(110vw);
+      transition: transform 1s ease-in-out;
+  }

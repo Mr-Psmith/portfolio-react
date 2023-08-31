@@ -10,7 +10,7 @@
   padding: 1rem 0;
   margin: auto;
   border-radius: 15px;
-  transform: translateX(-110vw);
+  /* transform: translateX(-110%); */
   transition: transform 1s ease-out; 
   /* transition: transform 4s ease-in-out;
     transform: translateX(101%); */
@@ -118,9 +118,9 @@
  
 @keyframes slideOut {
   0% { transform: translateX(0%); }
-  100% { transform: translateX(100%); }
+  100% { transform: translateX(0); }
 }
 @-webkit-keyframes slideOut {
   0% { -webkit-transform: translateX(0%); }
-  100% { -webkit-transform: translateX(200%); }
+  100% { -webkit-transform: translateX(100%); }
 }

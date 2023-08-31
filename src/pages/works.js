@@ -1,24 +1,24 @@
 //import classes from "./works.module.css";
-import CSSTransition from "react-transition-group/CSSTransition";
+//import CSSTransition from "react-transition-group/CSSTransition";
 import "./transition.css";
 import "./works.css";
 
 import oldPortf from "../img/works-oldPortf.jpg";
 import tan from "../img/tan.jpg";
 import { useRef } from "react";
+//import { useRef } from "react";
 
 function Works(props) {
-  const ref = useRef(null);
   //const animationTiming = { enter: 700, exit: 700 };
 
- /*  const classChange = ["mainn", props.worksSlidePr ? "slideOut" : "slideIn"]; */
+  //const classChange = ["mainn", props.worksSlidePr ? "slideIn" : "slideOut"];
   /* const classAll = {`${classes.main}`}
   ["main", props.worksSlidePr ? "opened" : "closed"];   classAll.join(" ") */
 
   return (
     <>
-      <CSSTransition ref={ref} mountOnEnter unmountOnExit in={props.worksSlidePr} timeout={700} classNames="slides">
-        <div ref={ref} className="mainn">
+      {/* <CSSTransition ref={ref} mountOnEnter unmountOnExit in={props.worksSlidePr} timeout={700} classNames="slides"> */}
+        <div /* className={classChange.join(" ")} */className="mainn" id="works">
           <h1>Here are some of my works:</h1>
           <h4>You can check them out by clicking the pictures</h4>
           <div /* className={classes.unvisibleblock} */ className="unvisibleblock">
@@ -77,7 +77,7 @@ function Works(props) {
           </div> */}
           </div>
         </div>
-      </CSSTransition>
+      {/* </CSSTransition> */}
     </>
   );
 }

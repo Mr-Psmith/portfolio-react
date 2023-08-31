@@ -5,7 +5,7 @@ import classes from "./welcome.module.css";
 function Welcome(props) {
     return (
         <>
-            <CSSTransition in={props.welcomeSlidePr} timeout={700} mountOnEnter unmountOnExit classNames="slides">
+            {/* <CSSTransition in={props.welcomeSlidePr} timeout={700} mountOnEnter unmountOnExit classNames="slides"> */}
                 {/* {state => ( */}
                     <div className={classes.main} /* style={{ transition: "all 1s ease-out" ,opacity: state === "exited" ? 0 : 1}} */>
                     <h1>Hi, I am Paul.</h1>
@@ -14,9 +14,8 @@ function Welcome(props) {
                     <h4>Let's work together, help each-other growing!</h4>
                     <button onClick={props.contactButtonHandlerPr}>Contact Me!</button>
                 </div>
-                {/* )} */}
                 
-            </CSSTransition>
+            {/* </CSSTransition> */}
         </>
     );
 }
