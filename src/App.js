@@ -8,28 +8,28 @@ import About from "./pages/about";
 //import Connect from "./pages/connect";
 import Welcome from "./pages/welcome";
 import Works from "./pages/works";
-import Modal from "./components/utility/modal";
-import Backdrop from "./components/utility/backdrop";
-import IframeOP from "./components/iframe/iframe-oldPortfolio";
-import IframeTan from "./components/iframe/iframe-tan";
-import Close from "./components/utility/close-x";
+import Modal from "./utility/modal";
+import Backdrop from "./utility/backdrop";
+import IframeOP from "./iframe/iframe-oldPortfolio";
+import IframeTan from "./iframe/iframe-tan";
+import Close from "./utility/close-x";
 //import Transition from "react-transition-group/Transition";
 import Contact from "./pages/contact";
-import ModalFrame from "./components/utility/modal-frame";
-import Terms from "./components/iframe/terms";
+import ModalFrame from "./utility/modal-frame";
+import Terms from "./iframe/terms";
 
 //Add a onClick to the div above all the li-s in the nav for all the booleans in the menus
 //Az emailt meg másolósra?
 function App() {
 
     // const [welcomeSlide, setWelcomeSlide] = useState(true);
-    // const [worksSlide, setWorksSlide] = useState(false);
+    const [worksSlide, setWorksSlide] = useState(false);
     // const [aboutSlide, setAboutSlide] = useState(true);
     // const [contactSlide, setContactSlide] = useState(true);
 
 
     const welcomeScreen = <Welcome contactButtonHandlerPr={contactButtonHandler} /* welcomeSlidePr={welcomeSlide} */ />;
-    const worksScreen = <Works tanPrHandler={tanHandler} openOPHandlerPr={openOPHandler} worksHandlerppr={worksHandler} /* worksSlidePr={worksSlide} */ />;
+    const worksScreen = <Works tanPrHandler={tanHandler} openOPHandlerPr={openOPHandler} worksHandlerppr={worksHandler} worksSlidePr={worksSlide} />;
     const aboutScreen = <About contactButtonHandlerPr={contactButtonHandler} /* aboutSlidePr={aboutSlide} */ />;
     const contactScreen = <Contact /* contactSlidePr={contactSlide} */ />;
 
@@ -45,7 +45,7 @@ function App() {
     function welcomeHandler() {
         setSwitchCards(welcomeScreen);
         // setWelcomeSlide(true);
-        // setWorksSlide(false);
+        setWorksSlide(false);
         // setAboutSlide(true);
         // setContactSlide(false);
     }
@@ -53,7 +53,7 @@ function App() {
         setSwitchCards(worksScreen);
 
     //     setWelcomeSlide(false);
-    //     setWorksSlide(true);
+        setWorksSlide(true);
     //     setAboutSlide(true);
     //     setContactSlide(false);
     }
@@ -61,7 +61,7 @@ function App() {
         setSwitchCards(aboutScreen);
 
         // setWelcomeSlide(false);
-        // setWorksSlide(false);
+        setWorksSlide(false);
         // setAboutSlide(false);
         // setContactSlide(false);
     }
@@ -69,7 +69,7 @@ function App() {
         setSwitchCards(contactScreen);
 
         // setWelcomeSlide(false);
-        // setWorksSlide(false);
+        setWorksSlide(false);
         // setAboutSlide(true);
         // setContactSlide(true);
     }
@@ -109,8 +109,8 @@ function App() {
         //setContactBox(false);
     }
     function contactButtonHandler() {
-        /* setContactBox(true);
-    setBackdrop(true); */
+        //setContactBox(true);
+        //setBackdrop(true);
         setSwitchCards(contactScreen);
     }
 

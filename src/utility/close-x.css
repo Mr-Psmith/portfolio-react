@@ -1,7 +1,7 @@
 .main {
     height: 3rem;
     width: 3rem;
-    background-image: url("../../img/vector-cross.png");
+    background-image: url("../img/vector-cross.png");
     background-size: cover;
     position: fixed;
     right: 7vw;

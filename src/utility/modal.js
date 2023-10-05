@@ -1,8 +1,8 @@
 import { useState } from "react";
-import About from "../../pages/about";
-import Contact from "../../pages/contact";
-import Welcome from "../../pages/welcome";
-import Works from "../../pages/works";
+import About from "../pages/about";
+import Contact from "../pages/contact";
+import Welcome from "../pages/welcome";
+import Works from "../pages/works";
 import classes from "./modal.module.css";
 import CSSTransition from "react-transition-group/CSSTransition";
 import "./transition.css";

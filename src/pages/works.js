@@ -11,7 +11,7 @@ import { useRef } from "react";
 function Works(props) {
   //const animationTiming = { enter: 700, exit: 700 };
 
-  //const classChange = ["mainn", props.worksSlidePr ? "slideIn" : "slideOut"];
+  const classChange = ["mainn", props.worksSlidePr ? "slideIn" : "slideOut"];
   /* const classAll = {`${classes.main}`}
   ["main", props.worksSlidePr ? "opened" : "closed"];   classAll.join(" ") */
 

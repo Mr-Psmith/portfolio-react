@@ -30,6 +30,7 @@ function About(props) {
                                 <li>CSS-Modules</li>
                                 <li>Redux</li>
                                 <li>React-router</li>
+                                <li>Framer-Motion?</li>
                             </ul>
                             <li>Typescript</li>
                             {/* <li>Next.js</li> */}
