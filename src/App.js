@@ -35,24 +35,24 @@ function App() {
     const aboutScreen = <About contactButtonHandlerPr={contactButtonHandler} aboutSlidePr={aboutSlide} />;
     const contactScreen = <Contact contactSlidePr={contactSlide} />;
 
-    //const [contactBox, setContactBox] = useState(false);
+    //const [contactBox, setContactBox] = useState(false); DELETE
     const [closeX, setCloseX] = useState(false);
     const [iframeOP, setIframeOP] = useState("");
     const [iframeTan, setIframeTan] = useState("");
     const [iframeTerms, setIframeTerms] = useState("");
     const [modalFrame, setModalFrame] = useState(false);
     const [backdrop, setBackdrop] = useState(false);
-    //const [switchCards, setSwitchCards] = useState(welcomeScreen);
+    //const [switchCards, setSwitchCards] = useState(welcomeScreen); DELETE
     
     function welcomeHandler() {
-        //setSwitchCards(welcomeScreen);
+        //setSwitchCards(welcomeScreen); DELETE
         setWelcomeSlide(true);
         setWorksSlide(false);
         setAboutSlide(false);
         setContactSlide(false);
     }
     function worksHandler() {
-        //setSwitchCards(worksScreen);
+        //setSwitchCards(worksScreen); DELETE
 
         setWelcomeSlide(false);
         setWorksSlide(true);
@@ -60,7 +60,7 @@ function App() {
         setContactSlide(false);
     }
     function aboutHandler() {
-        //setSwitchCards(aboutScreen);
+        //setSwitchCards(aboutScreen); DELETE
 
         setWelcomeSlide(false);
         setWorksSlide(false);
@@ -68,7 +68,7 @@ function App() {
         setContactSlide(false);
     }
     function connectHandler() {
-        //setSwitchCards(contactScreen);
+        //setSwitchCards(contactScreen); DELETE
 
         setWelcomeSlide(false);
         setWorksSlide(false);
@@ -88,7 +88,7 @@ function App() {
         setIframeTan(true);
         setCloseX(true);
     }
-    // function termsHandler() {
+    // function termsHandler() { 
     //     setModalFrame(true);
     //     setBackdrop(true);
     //     setIframeTerms(true);
@@ -111,9 +111,12 @@ function App() {
         //setContactBox(false);
     }
     function contactButtonHandler() {
-        //setContactBox(true);
-        //setBackdrop(true);
-        //setSwitchCards(contactScreen);
+        setWelcomeSlide(false);
+        setAboutSlide(false);
+        setContactSlide(true);
+        //setContactBox(true); DELETE
+        //setBackdrop(true); DELETE
+        //setSwitchCards(contactScreen); DELETE
     }
 
     return (

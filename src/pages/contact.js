@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 function Contact(props) {
     return (
         <>
-            <motion.div animate={{x: props.contactSlidePr ? -2000 : 0}}>
+            <motion.div animate={{x: props.contactSlidePr ? -2000 : 0}} transition={{ duration: 0.5, type: "spring", bounce: 0.3 }}>
             {/* <CSSTransition /* mountOnEnter unmountOnExit / in={props.contactSlidePr} timeout={700} classNames="slides"> */}
                 <div className={classes.contactMain}>
                     <div className={classes.contactUnvisibleblock1}>

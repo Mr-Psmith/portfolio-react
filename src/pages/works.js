@@ -19,7 +19,7 @@ function Works(props) {
   return (
     <>
       {/* <CSSTransition ref={ref} mountOnEnter unmountOnExit in={props.worksSlidePr} timeout={700} classNames="slides"> */}
-      <motion.div animate={{x: props.worksSlidePr ? -2000 : 0}}>
+      <motion.div animate={{x: props.worksSlidePr ? -2000 : 0}} transition={{ duration: 0.5, type: "spring", bounce: 0.3 }}>
         <div /* className={classChange.join(" ")} */className="mainn" id="works">
           <h1>Here are some of my works:</h1>
           <h4>You can check them out by clicking the pictures</h4>

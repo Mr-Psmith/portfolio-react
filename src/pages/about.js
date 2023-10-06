@@ -7,7 +7,7 @@ function About(props) {
     return (
         <>
             {/* <CSSTransition /* mountOnEnter unmountOnExit / in={props.aboutSlidePr} timeout={700} classNames="slides"> */}
-            <motion.div animate={{x: props.aboutSlidePr ? -2000 : 0}}>
+            <motion.div animate={{x: props.aboutSlidePr ? -2000 : 0}} transition={{ duration: 0.5, type: "spring", bounce: 0.3 }}>
                 <div className={classes.aboutMain}>
                     <div className={classes.aboutBlock1}>
                         <h1>About Me:</h1>
