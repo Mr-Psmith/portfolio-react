@@ -1,11 +1,13 @@
-import CSSTransition from "react-transition-group/CSSTransition";
+//import CSSTransition from "react-transition-group/CSSTransition";
 import classes from "./about.module.css";
 import "./transition.css"
+import { motion } from "framer-motion";
 
 function About(props) {
     return (
         <>
-            <CSSTransition /* mountOnEnter unmountOnExit */ in={props.aboutSlidePr} timeout={700} classNames="slides">
+            {/* <CSSTransition /* mountOnEnter unmountOnExit / in={props.aboutSlidePr} timeout={700} classNames="slides"> */}
+            <motion.div animate={{x: props.aboutSlidePr ? -2000 : 0}}>
                 <div className={classes.aboutMain}>
                     <div className={classes.aboutBlock1}>
                         <h1>About Me:</h1>
@@ -30,7 +32,7 @@ function About(props) {
                                 <li>CSS-Modules</li>
                                 <li>Redux</li>
                                 <li>React-router</li>
-                                <li>Framer-Motion?</li>
+                                <li>Framer-Motion</li>
                             </ul>
                             <li>Typescript</li>
                             {/* <li>Next.js</li> */}
@@ -41,7 +43,8 @@ function About(props) {
                         </ul>
                     </div>
                 </div>
-            </CSSTransition>
+                </motion.div>
+            {/* </CSSTransition> */}
         </>
     );
 }

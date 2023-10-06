@@ -2,6 +2,7 @@
 //import CSSTransition from "react-transition-group/CSSTransition";
 import "./transition.css";
 import "./works.css";
+import { motion } from "framer-motion";
 
 import oldPortf from "../img/works-oldPortf.jpg";
 import tan from "../img/tan.jpg";
@@ -18,6 +19,7 @@ function Works(props) {
   return (
     <>
       {/* <CSSTransition ref={ref} mountOnEnter unmountOnExit in={props.worksSlidePr} timeout={700} classNames="slides"> */}
+      <motion.div animate={{x: props.worksSlidePr ? -2000 : 0}}>
         <div /* className={classChange.join(" ")} */className="mainn" id="works">
           <h1>Here are some of my works:</h1>
           <h4>You can check them out by clicking the pictures</h4>
@@ -78,6 +80,7 @@ function Works(props) {
           </div>
         </div>
       {/* </CSSTransition> */}
+      </motion.div>
     </>
   );
 }

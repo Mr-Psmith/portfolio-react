@@ -12,6 +12,7 @@
     font-size: 1.4rem;
     text-align: left;
     z-index: 201;
+    transform: translateX(100%);
 }
 .contactUnvisibleblock1,
 .contactUnvisibleblock2 {

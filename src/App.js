@@ -22,16 +22,18 @@ import Terms from "./iframe/terms";
 //Az emailt meg másolósra?
 function App() {
 
-    // const [welcomeSlide, setWelcomeSlide] = useState(true);
+    /* const x =  */
+
+    const [welcomeSlide, setWelcomeSlide] = useState(true);
     const [worksSlide, setWorksSlide] = useState(false);
-    // const [aboutSlide, setAboutSlide] = useState(true);
-    // const [contactSlide, setContactSlide] = useState(true);
+    const [aboutSlide, setAboutSlide] = useState(true);
+    const [contactSlide, setContactSlide] = useState(true);
 
 
-    const welcomeScreen = <Welcome contactButtonHandlerPr={contactButtonHandler} /* welcomeSlidePr={welcomeSlide} */ />;
+    const welcomeScreen = <Welcome contactButtonHandlerPr={contactButtonHandler} welcomeSlidePr={welcomeSlide} />;
     const worksScreen = <Works tanPrHandler={tanHandler} openOPHandlerPr={openOPHandler} worksHandlerppr={worksHandler} worksSlidePr={worksSlide} />;
-    const aboutScreen = <About contactButtonHandlerPr={contactButtonHandler} /* aboutSlidePr={aboutSlide} */ />;
-    const contactScreen = <Contact /* contactSlidePr={contactSlide} */ />;
+    const aboutScreen = <About contactButtonHandlerPr={contactButtonHandler} aboutSlidePr={aboutSlide} />;
+    const contactScreen = <Contact contactSlidePr={contactSlide} />;
 
     //const [contactBox, setContactBox] = useState(false);
     const [closeX, setCloseX] = useState(false);
@@ -40,38 +42,38 @@ function App() {
     const [iframeTerms, setIframeTerms] = useState("");
     const [modalFrame, setModalFrame] = useState(false);
     const [backdrop, setBackdrop] = useState(false);
-    const [switchCards, setSwitchCards] = useState(welcomeScreen);
+    //const [switchCards, setSwitchCards] = useState(welcomeScreen);
     
     function welcomeHandler() {
-        setSwitchCards(welcomeScreen);
-        // setWelcomeSlide(true);
+        //setSwitchCards(welcomeScreen);
+        setWelcomeSlide(true);
         setWorksSlide(false);
-        // setAboutSlide(true);
-        // setContactSlide(false);
+        setAboutSlide(false);
+        setContactSlide(false);
     }
     function worksHandler() {
-        setSwitchCards(worksScreen);
+        //setSwitchCards(worksScreen);
 
-    //     setWelcomeSlide(false);
+        setWelcomeSlide(false);
         setWorksSlide(true);
-    //     setAboutSlide(true);
-    //     setContactSlide(false);
+        setAboutSlide(false);
+        setContactSlide(false);
     }
     function aboutHandler() {
-        setSwitchCards(aboutScreen);
+        //setSwitchCards(aboutScreen);
 
-        // setWelcomeSlide(false);
+        setWelcomeSlide(false);
         setWorksSlide(false);
-        // setAboutSlide(false);
-        // setContactSlide(false);
+        setAboutSlide(true);
+        setContactSlide(false);
     }
     function connectHandler() {
-        setSwitchCards(contactScreen);
+        //setSwitchCards(contactScreen);
 
-        // setWelcomeSlide(false);
+        setWelcomeSlide(false);
         setWorksSlide(false);
-        // setAboutSlide(true);
-        // setContactSlide(true);
+        setAboutSlide(false);
+        setContactSlide(true);
     }
 
     function openOPHandler() {
@@ -111,7 +113,7 @@ function App() {
     function contactButtonHandler() {
         //setContactBox(true);
         //setBackdrop(true);
-        setSwitchCards(contactScreen);
+        //setSwitchCards(contactScreen);
     }
 
     return (
@@ -122,7 +124,11 @@ function App() {
                 </section>
                 <section className={classes.body}>
                     {/* <Modal switchCardsPr={switchCards} slidePr={slide}/> */}
-                    {switchCards}
+                    {/* {switchCards} */}
+                    {welcomeSlide ? welcomeScreen : ""}
+                    {worksSlide ? worksScreen : ""}
+                    {aboutSlide ? aboutScreen : ""}
+                    {contactSlide ? contactScreen : ""}
                     {modalFrame ? <ModalFrame /> : ""}
                     {backdrop ? <Backdrop closeBackdrHandlerPr={closeBackdrHandler} /> : ""}
                     {iframeOP ? <IframeOP iframeOPPr={iframeOP} /> : ""}

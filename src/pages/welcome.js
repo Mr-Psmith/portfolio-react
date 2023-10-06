@@ -1,11 +1,13 @@
 import CSSTransition from "react-transition-group/CSSTransition";
 import classes from "./welcome.module.css";
 //import Transition from "react-transition-group/Transition";
+import { motion } from "framer-motion";
 
 function Welcome(props) {
     return (
         <>
             {/* <CSSTransition in={props.welcomeSlidePr} timeout={700} mountOnEnter unmountOnExit classNames="slides"> */}
+            <motion.div animate={{x: props.welcomeSlidePr ? -2000 : 0}}>
                 {/* {state => ( */}
                     <div className={classes.main} /* style={{ transition: "all 1s ease-out" ,opacity: state === "exited" ? 0 : 1}} */>
                     <h1>Hi, I am Paul.</h1>
@@ -14,7 +16,7 @@ function Welcome(props) {
                     <h4>Let's work together, help each-other growing!</h4>
                     <button onClick={props.contactButtonHandlerPr}>Contact Me!</button>
                 </div>
-                
+                </motion.div>
             {/* </CSSTransition> */}
         </>
     );

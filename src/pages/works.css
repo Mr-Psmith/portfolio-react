@@ -11,11 +11,12 @@
     padding: 1rem 0;
     margin: auto;
     border-radius: 15px;
+    transform: translateX(100%);
     /* transform: translateX(-110%); */
     /* transition: transform 1s ease-out; */
     /* transition: transform 4s ease-in-out;
     transform: translateX(101%); */
-    animation: slideIn 0.7s ease-in-out; /* forwards */
+    /* animation: slideIn 0.7s ease-in-out; */ /* forwards */
 }
 
 

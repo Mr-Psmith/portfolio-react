@@ -8,6 +8,7 @@
     border-radius: 15px;
     /* transition: transform 4s ease-in-out;
     transform: translateX(101%); */
+    transform: translateX(100%);
 }
 .main h1 {
     font-size: 2.5rem;
