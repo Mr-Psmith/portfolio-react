@@ -26,8 +26,8 @@ function App() {
 
     const [welcomeSlide, setWelcomeSlide] = useState(true);
     const [worksSlide, setWorksSlide] = useState(false);
-    const [aboutSlide, setAboutSlide] = useState(true);
-    const [contactSlide, setContactSlide] = useState(true);
+    const [aboutSlide, setAboutSlide] = useState(false);
+    const [contactSlide, setContactSlide] = useState(false);
 
 
     const welcomeScreen = <Welcome contactButtonHandlerPr={contactButtonHandler} welcomeSlidePr={welcomeSlide} />;
