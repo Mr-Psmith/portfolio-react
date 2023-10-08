@@ -3,7 +3,7 @@ import classes from "./modal-frame.module.css";
 function ModalFrame() {
     return (
         <>
-            <div className={classes.main}>
+            <div className={classes.mainModalFrame}>
                 
             </div>
         </>

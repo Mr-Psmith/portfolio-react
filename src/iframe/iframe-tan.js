@@ -4,7 +4,7 @@ function IframeTan() {
     return (
         <>
             <div className={classes.main}>
-                <iframe src="https://theorianatura.psancthus.com/" title="oldPortf" className={classes.main}></iframe>
+                <iframe src="https://theorianatura.psancthus.com/" title="oldPortf" className={classes.mainIframes}></iframe>
             </div>
         </>
     );

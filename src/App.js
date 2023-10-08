@@ -29,17 +29,11 @@ function App() {
     const [aboutSlide, setAboutSlide] = useState(false);
     const [contactSlide, setContactSlide] = useState(false);
 
-
-    const welcomeScreen = <Welcome contactButtonHandlerPr={contactButtonHandler} welcomeSlidePr={welcomeSlide} />;
-    const worksScreen = <Works tanPrHandler={tanHandler} openOPHandlerPr={openOPHandler} worksHandlerppr={worksHandler} worksSlidePr={worksSlide} />;
-    const aboutScreen = <About contactButtonHandlerPr={contactButtonHandler} aboutSlidePr={aboutSlide} />;
-    const contactScreen = <Contact contactSlidePr={contactSlide} />;
-
     //const [contactBox, setContactBox] = useState(false); DELETE
     const [closeX, setCloseX] = useState(false);
     const [iframeOP, setIframeOP] = useState("");
     const [iframeTan, setIframeTan] = useState("");
-    const [iframeTerms, setIframeTerms] = useState("");
+    //const [iframeTerms, setIframeTerms] = useState("");
     const [modalFrame, setModalFrame] = useState(false);
     const [backdrop, setBackdrop] = useState(false);
     //const [switchCards, setSwitchCards] = useState(welcomeScreen); DELETE
@@ -119,6 +113,12 @@ function App() {
         //setSwitchCards(contactScreen); DELETE
     }
 
+    const welcomeScreen = <Welcome contactButtonHandlerPr={contactButtonHandler} welcomeSlidePr={welcomeSlide} />;
+    const worksScreen = <Works tanPrHandler={tanHandler} openOPHandlerPr={openOPHandler} worksHandlerppr={worksHandler} worksSlidePr={worksSlide} iframeOPPr={iframeOP} />;
+    const aboutScreen = <About contactButtonHandlerPr={contactButtonHandler} aboutSlidePr={aboutSlide} />;
+    const contactScreen = <Contact contactSlidePr={contactSlide} />;
+
+
     return (
         <div className={classes.App}>
             <section className={classes.app90}>
@@ -137,7 +137,7 @@ function App() {
                     {iframeOP ? <IframeOP iframeOPPr={iframeOP} /> : ""}
                     {iframeTan ? <IframeTan /> : ""}
                     {/* {iframeTerms ? <Terms /> : ""} */}
-                    {closeX ? <Close closeXPr={closeX} closeAllHandlerPr={closeAllHandler} /> : ""}
+                    {closeX ? <Close /* closeXPr={closeX} */ closeAllHandlerPr={closeAllHandler} /> : ""}
                     {/* <Transition in={closeX} timeout={300}>
             {(state) => (
               <Close closeAllHandlerPr={closeAllHandler} closepr={state} />

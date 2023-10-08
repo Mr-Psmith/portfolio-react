@@ -1,4 +1,8 @@
-.main {
+.mainModalFrame::before {
+    transform: translateX(150%);
+}
+
+.mainModalFrame {
     background-color: rgba(36, 36, 36, 0.875);
     position: fixed;
     top: 10%;
@@ -9,6 +13,7 @@
     margin: auto;
     z-index: 201;
     border: none;
+    animation: slideIn 0.4s ease-in-out forwards;
 }
 
 .ModalOpen {
@@ -16,4 +21,24 @@
 }
 .ModalClosed {
     display: none;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-120vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        transform: translateX(-120vw);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+    }
 }

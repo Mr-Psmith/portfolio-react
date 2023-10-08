@@ -1,4 +1,8 @@
-.main {
+.mainIframes::before {
+    transform: translateX(150%);
+}
+
+.mainIframes {
     position: fixed;
     top: 10%;
     left: 10%;
@@ -8,4 +12,38 @@
     margin: auto;
     z-index: 201;
     border: rgb(127, 99, 5) 3px solid;
+    /* transform: translateX(150%); */
+    animation: slideIn 0.4s ease-in-out forwards;
+}
+
+.mainIframesFramer {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    height: 80vh;
+    width: 80vw;
+    box-sizing: border-box;
+    margin: auto;
+    z-index: 201;
+    border: rgb(127, 99, 5) 3px solid;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-120vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        transform: translateX(-120vw);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+    }
 }
