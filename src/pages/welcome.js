@@ -7,7 +7,7 @@ function Welcome(props) {
     return (
         <>
             {/* <CSSTransition in={props.welcomeSlidePr} timeout={700} mountOnEnter unmountOnExit classNames="slides"> */}
-            <motion.div animate={{x: props.welcomeSlidePr ? -2000 : 0}} transition={{ duration: 0.5, type: "spring", bounce: 0.3 }}>
+            <motion.div animate={{x: props.welcomeSlidePr ? "-90%" : 0}} transition={{ duration: 0.5, type: "spring", bounce: 0.3 }}>
                 {/* {state => ( */}
                     <div className={classes.main} /* style={{ transition: "all 1s ease-out" ,opacity: state === "exited" ? 0 : 1}} */>
                     <h1>Hi, I am Paul.</h1>

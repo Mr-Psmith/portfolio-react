@@ -108,6 +108,11 @@
         width: 3rem;
         padding: 0.4rem 0;
     }
+
+    .mainContainer {
+        display: none;
+    }
+
 }
 
 .arrow {
@@ -118,3 +123,33 @@
     right: 10rem;
     background-image: url(../img/arrowVektWhite.png) cover;
 }
+
+/* @media (max-width: 1200px) {
+    .closeXMain {
+        right: 6.5vw;
+    }
+}
+@media (max-width: 1500px) {
+    .closeXMain {
+        right: 5.5vw;
+    }
+}
+@media (max-width: 1400px) {
+    .closeXMain {
+        right: 5.5vw;
+    }
+}
+@media (max-width: 1100px) {
+    .closeXMain {
+        height: 2.5rem;
+        width: 2.5rem;
+        right: 4vw;
+    }
+}
+@media (max-width: 700px) {
+    .closeXMain {
+        height: 2rem;
+        width: 2rem;
+        right: 2vw;
+    }
+} */

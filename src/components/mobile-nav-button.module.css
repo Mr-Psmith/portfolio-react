@@ -1,0 +1,29 @@
+.hamburgerMain {
+    margin: auto;
+    padding: 0.2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.hamburgerLines {
+    display: block;
+    margin: 0.2rem auto;
+    border-radius: 4px;
+    opacity: 1;
+    width: 4rem;
+    height: 0.5rem;
+    background-color: rgb(176, 136, 7);
+    z-index: 777;
+}
+
+@media (min-width: 1200px) {
+    .hamburgerMain {
+        display: none;
+    }
+}

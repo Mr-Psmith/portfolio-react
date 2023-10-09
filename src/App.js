@@ -17,6 +17,7 @@ import Close from "./utility/close-x";
 import Contact from "./pages/contact";
 import ModalFrame from "./utility/modal-frame";
 import Terms from "./iframe/terms";
+import Hamburger from "./components/mobile-nav-button";
 
 //Add a onClick to the div above all the li-s in the nav for all the booleans in the menus
 //Az emailt meg másolósra?
@@ -113,6 +114,11 @@ function App() {
         //setSwitchCards(contactScreen); DELETE
     }
 
+    function hamburgerClickHandler() {
+        
+    }
+
+
     const welcomeScreen = <Welcome contactButtonHandlerPr={contactButtonHandler} welcomeSlidePr={welcomeSlide} />;
     const worksScreen = <Works tanPrHandler={tanHandler} openOPHandlerPr={openOPHandler} worksHandlerppr={worksHandler} worksSlidePr={worksSlide} iframeOPPr={iframeOP} />;
     const aboutScreen = <About contactButtonHandlerPr={contactButtonHandler} aboutSlidePr={aboutSlide} />;
@@ -123,6 +129,7 @@ function App() {
         <div className={classes.App}>
             <section className={classes.app90}>
                 <section className={classes.header}>
+                    <Hamburger hamburgerClickHandlerPr={hamburgerClickHandler} />
                     <Header />
                 </section>
                 <section className={classes.body}>
@@ -137,12 +144,7 @@ function App() {
                     {iframeOP ? <IframeOP iframeOPPr={iframeOP} /> : ""}
                     {iframeTan ? <IframeTan /> : ""}
                     {/* {iframeTerms ? <Terms /> : ""} */}
-                    {closeX ? <Close /* closeXPr={closeX} */ closeAllHandlerPr={closeAllHandler} /> : ""}
-                    {/* <Transition in={closeX} timeout={300}>
-            {(state) => (
-              <Close closeAllHandlerPr={closeAllHandler} closepr={state} />
-            )}
-          </Transition> */}
+                    {closeX ? <Close closeXPr={closeX} closeAllHandlerPr={closeAllHandler} /> : ""}
                     {/* {contactBox ? <Contact /> : ""} */}
                 </section>
                 <section className={classes.footer}>

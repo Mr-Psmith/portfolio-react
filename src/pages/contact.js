@@ -4,15 +4,13 @@ import inst from "../img/insta.png";
 import twit from "../img/twit.png";
 import gith from "../img/github.png";
 import pic from "../img/f037.png";
-//import CSSTransition from "react-transition-group/CSSTransition";
 import "./transition.css"
 import { motion } from "framer-motion";
 
 function Contact(props) {
     return (
         <>
-            <motion.div animate={{x: props.contactSlidePr ? -2000 : 0}} transition={{ duration: 0.5, type: "spring", bounce: 0.3 }}>
-            {/* <CSSTransition /* mountOnEnter unmountOnExit / in={props.contactSlidePr} timeout={700} classNames="slides"> */}
+            <motion.div animate={{x: props.contactSlidePr ? "-90%" : 0}} transition={{ duration: 0.5, type: "spring", bounce: 0.3 }}>
                 <div className={classes.contactMain}>
                     <div className={classes.contactUnvisibleblock1}>
                         <form method="get" encType="text/plain">

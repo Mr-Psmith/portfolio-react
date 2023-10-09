@@ -1,0 +1,55 @@
+.closeXMain {
+    height: 3rem;
+    width: 3rem;
+    background-image: url("../img/vector-cross.png");
+    background-size: cover;
+    position: fixed;
+    right: 7vw;
+    top: 10vh;
+    z-index: 201;
+    cursor: pointer;
+    background-color: rgb(127, 99, 5);
+    transform: translateX(-700%);
+}
+
+.closeXMain:hover {
+    background-color: rgb(189, 1, 1);
+    transform: scale(1.1);
+}
+.closeXMain:active {
+    background-color: rgb(0, 255, 247);
+}
+
+
+@media (max-width: 1750px) {
+    .closeXMain {
+        right: 6.5vw;
+    }
+}
+@media (max-width: 1500px) {
+    .closeXMain {
+        right: 5.5vw;
+    }
+}
+@media (max-width: 1400px) {
+    .closeXMain {
+        right: 5.5vw;
+    }
+}
+@media (max-width: 1100px) {
+    .closeXMain {
+        height: 2.5rem;
+        width: 2.5rem;
+        right: 4vw;
+    }
+}
+@media (max-width: 700px) {
+    .closeXMain {
+        height: 2rem;
+        width: 2rem;
+        right: 2vw;
+    }
+}
+
+
+
