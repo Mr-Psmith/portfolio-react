@@ -1,4 +1,7 @@
 .aboutMain {
+    position: fixed;
+    top: 4vh;
+    left: 5vw;
     box-sizing: border-box;
     background-color: rgba(34, 32, 19, 0.372);
     width: 80vw;
@@ -81,5 +84,11 @@
         font-size: 0.9rem;
         text-align: left;
         line-height: 1.7rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .aboutMain {
+        left: 10vw;
     }
 }

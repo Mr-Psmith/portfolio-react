@@ -1,4 +1,7 @@
 .contactMain {
+    position: fixed;
+    top: 4vh;
+    left: 5vw;
     box-sizing: border-box;
     background-color: rgba(34, 32, 19, 0.372);
     width: 80vw;
@@ -107,4 +110,10 @@
 .contactUnvisibleblock2 .github,
 .contactUnvisibleblock2 .twitter {
     border-radius: 200px;
+}
+
+@media (max-width: 1200px) {
+    .contactMain {
+        left: 10vw;
+    }
 }

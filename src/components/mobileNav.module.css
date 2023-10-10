@@ -1,0 +1,50 @@
+.mainContainerMobileNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(125, 114, 42, 0.372);
+    width: 70vw;
+    height: 100vh;
+    z-index: 777;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mainContainerMobileNav ul {
+    margin: 3rem auto;
+}
+.mainContainerMobileNav li {
+    font-size: 4rem;
+    margin: 4rem auto;
+    cursor: pointer;
+}
+
+.socalPicsMobileNav {
+    padding: 1rem;
+    margin: 0 10vw;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.fac,
+.inst,
+.github,
+.twitter {
+    width: 4rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.fac:hover,
+.inst:hover,
+.twitter:hover {
+    background-color: whitesmoke;
+}
+.github:hover {
+    background-color: blue;
+}
+.github,
+.twitter {
+    border-radius: 200px;
+}

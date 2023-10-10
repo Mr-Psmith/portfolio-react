@@ -1,16 +1,17 @@
-import classes from "./mobile-nav.modules.css";
+import classes from "./mobileNav.module.css";
+
+import { motion } from "framer-motion";
 
 import facPic from "../img/fac.jpg";
 import gith from "../img/github.png";
 import inst from "../img/insta.png";
 import twit from "../img/twit.png";
-import { useState } from "react";
 
-function Navi(props) {
+function MobileNavi(props) {
 
     return (
         <>
-            <div className={classes.mainContainer}>
+            <motion.div className={classes.mainContainerMobileNav} initial={{x: "100vw"}} animate={{x: props.mobileNavOpenPr ? "0vw" : 0, opacity: props.mobileNavOpenPr ? 1 : 0}} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{x: "100vw"}}>
                 <ul className={classes.ul}>
                     <li className={classes.li} onClick={props.welcomeHandlerPr}> 
                         Welcome
@@ -24,7 +25,8 @@ function Navi(props) {
                     <li className={classes.li} onClick={props.connectHandlerPr}>
                         Contact
                     </li>
-                    <div className={classes.socalPics}>
+                </ul>
+                <div className={classes.socalPicsMobileNav}>
                             <a href="https://www.facebook.com/messages/t/100000633126813" target="_blank"  rel="noreferrer">
                                 <img src={facPic} alt="Face" className={classes.fac}></img>
                             </a>
@@ -39,10 +41,9 @@ function Navi(props) {
                                 <img src={twit} alt="Twit" className={classes.twitter}></img>
                             </a>
                     </div>
-                </ul>
-            </div>
+            </motion.div>
         </>
     );
 }
 
-export default Navi;
+export default MobileNavi;

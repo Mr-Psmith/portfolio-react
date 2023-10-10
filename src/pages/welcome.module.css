@@ -1,4 +1,7 @@
 .main {
+    position: fixed;
+    top: 4vh;
+    left: 5vw;
     box-sizing: border-box;
     background-color: rgba(34, 32, 19, 0.372);
     width: 80vw;
@@ -29,4 +32,9 @@
     padding: 0.5rem;
     border-radius: 10px;
     cursor: pointer;
+}
+@media (max-width: 1200px) {
+    .main {
+        left: 10vw;
+    }
 }

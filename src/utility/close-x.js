@@ -6,7 +6,7 @@ function Close(props) {
 
     return (
         <>
-            <motion.div initial={{ x: "900%"}} animate={{ x: props.closeXPr ? "0" : 0 }}  transition={{ duration: 0.5, type: "spring", bounce: 0.3 }} className={classes.closeXMain} onClick={props.closeAllHandlerPr}></motion.div>
+            <motion.div initial={{ x: "900%" }} animate={{ x: props.closeXPr ? "0" : 0 }} transition={{ duration: 0.5, type: "spring", bounce: 0.3 }} exit={{x: "90%"}} className={classes.closeXMain} onClick={props.closeAllHandlerPr}></motion.div>
         </>
     );
 };
