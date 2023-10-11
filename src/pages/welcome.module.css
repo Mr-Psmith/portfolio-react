@@ -5,7 +5,7 @@
     box-sizing: border-box;
     background-color: rgba(34, 32, 19, 0.372);
     width: 80vw;
-    height: 72vh;
+    height: 75vh;
     padding: 1rem 0;
     margin: auto;
     border-radius: 15px;
@@ -25,12 +25,29 @@
 .main h4 {
     font-size: 2rem;
 }
-.main button {
+.button {
+    margin: auto;
+    width: 300px;
+    height: 60x;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+.triangl {
+    width: 0;
+    height: 0;
+    border-top: 60px solid #213971;
+    border-right: 60px solid transparent;
+}
+.rect {
+    width: 300px;
+    height: 60px;
     font-size: 2rem;
+    background-color: #213971;
     text-decoration: none;
     font-weight: bold;
     padding: 0.5rem;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     cursor: pointer;
 }
 @media (max-width: 1200px) {

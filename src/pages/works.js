@@ -1,43 +1,41 @@
-//import classes from "./works.module.css";
+import classes from "./works.module.css";
 //import CSSTransition from "react-transition-group/CSSTransition";
 import "./transition.css";
-import "./works.css";
 import { motion } from "framer-motion";
 
 import oldPortf from "../img/works-oldPortf.jpg";
 import tan from "../img/tan.jpg";
-import { useRef } from "react";
 //import { useRef } from "react";
 
 function Works(props) {
   //const animationTiming = { enter: 700, exit: 700 };
 
-  const classChange = ["mainn", props.worksSlidePr ? "slideIn" : "slideOut"];
+  /* const classChange = ["mainn", props.worksSlidePr ? "slideIn" : "slideOut"]; */
   /* const classAll = {`${classes.main}`}
   ["main", props.worksSlidePr ? "opened" : "closed"];   classAll.join(" ") */
 
   return (
     <>
       {/* <CSSTransition ref={ref} mountOnEnter unmountOnExit in={props.worksSlidePr} timeout={700} classNames="slides"> */}
-      <motion.div animate={{x: props.worksSlidePr ? "-90%" : 0, opacity: props.worksSlidePr ? 1 : 0}} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{x: "90%"}}>
-        <div /* className={classChange.join(" ")} */className="mainn" id="works">
+      <motion.div animate={{x: props.worksSlidePr ? "-90%" : 0, opacity: props.worksSlidePr ? 1 : 0}} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{x: "90%"}} className={classes.mainWorks}>
+        <div className={classes.mainn} id="works">
           <h1>Here are some of my works:</h1>
+          <div className={classes.unvisibleblock}>
           <h4>You can check them out by clicking the pictures</h4>
-          <div /* className={classes.unvisibleblock} */ className="unvisibleblock">
-            <div /* className={classes.block1} */ className="block1">
-              <div /* className={classes.work1} */ className="work1">
-                <div /* className={classes.image} */ className="image">
-                  <img src={tan} /* className={classes.tanC} */ className="tanC" alt="" onClick={props.tanPrHandler}></img>
+            <div className={classes.block1} >
+              <div className={classes.work1}>
+                <div className={classes.image} >
+                  <img src={tan} className={classes.tanC} alt="" onClick={props.tanPrHandler}></img>
                 </div>
-                <div className="descript"/* {classes.descript} */>
+                <div  className={classes.descript} >
                   <p>This site is the prototype copy of my Theoria Natura webmagazine, a small webmagazin which I made in 2022 as part of my resume. It uses pure Javascript, CSS, Html.</p>
                 </div>
               </div>
-              <div /* className={classes.work2} */ className="work2">
-                <div /* className={classes.image} */ className="image" onClick={props.openOPHandlerPr}>
-                  <img src={oldPortf} /* className={classes.startAzoresC} */ className="startAzoresC" alt=""></img>
+              <div className={classes.work2} >
+                <div className={classes.image} onClick={props.openOPHandlerPr}>
+                  <img src={oldPortf} className={classes.startAzoresC} alt=""></img>
                 </div>
-                <div /* className={classes.descript} */ className="descript">
+                <div className={classes.descript} >
                   <p>This is my old portfolio written in Javascript, CSS.</p>
                 </div>
               </div>

@@ -12,7 +12,7 @@ function Header () {
             <div className={classes.main}>
                 <NameDesignation />
                 <Logo />
-                <LanguageSelect />
+                {/* <LanguageSelect /> */}
             </div>
         </>
     );

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import classes from "./name-designation.module.css";
+import { motion } from "framer-motion";
+
 
 function NameDesignation() {
   const [nameSwitch, setNameSwitch] = useState("");
@@ -15,17 +17,22 @@ function NameDesignation() {
   return (
     <>
       <div className={classes.main} onMouseEnter={hoverHandler}>
-        {!nameSwitch ? (
-          <div>
+        {/* {!nameSwitch ? ( */}
+        <div>
+          <motion.div animate={{ x: !nameSwitch ? "-110%" : 0, opacity: nameSwitch ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "110%" }} className={classes.nameTransition}>
             <h4 className={classes.nameTransitionH4}>P. Sancthus</h4>
-            <h5>Web-developer, designer, writer, thinker</h5>
-          </div>
-        ) : (
-          <div>
+          </motion.div>
+          {/* <h5>Web-developer, designer, writer, thinker</h5> */}
+        </div>
+        {/* ) : ( */}
+        <div>
+          <motion.div animate={{ x: nameSwitch ? "-110%" : 0, opacity: !nameSwitch ? 1 : 0  }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "110%" }} className={classes.nameTransition}>
             <h4 className={classes.nameTransitionH4}>Pal Mihaly Szenthe</h4>
-            <h5>Web-developer, designer, writer, thinker</h5>
-          </div>
-        )}
+          </motion.div>
+          <h5>Web-developer, designer, writer, thinker</h5>
+
+        </div>
+        {/*  )} */}
       </div>
     </>
   );

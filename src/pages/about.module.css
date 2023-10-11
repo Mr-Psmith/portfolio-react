@@ -5,28 +5,38 @@
     box-sizing: border-box;
     background-color: rgba(34, 32, 19, 0.372);
     width: 80vw;
-    height: 72vh;
+    height: 75vh;
     margin: auto;
+    padding: 0 2rem;
     border-radius: 15px;
     display: grid;
     grid-template-columns: 70% 30%;
     transform: translateX(100%);
 }
 .aboutBlock1 {
-    margin: auto;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* height: 100%; */
 }
 
 .aboutBlock1 h1 {
     text-align: left;
-    font-size: 1.7rem;
-    margin-left: 4rem;
+    padding-left: 4rem;
+    font-size: 2rem;
+    margin: 4rem auto;    
+}
+.aboutBlock1_desc {
+    height: 100%;
 }
 .aboutBlock1 p {
     box-sizing: border-box;
     padding: 0.3rem 3rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: left;
-    line-height: 2rem;
+    line-height: 2.5rem;
 }
 .aboutBlock1 button {
     margin: 4rem 0;
@@ -39,38 +49,47 @@
 .aboutBlock2 {
     border-left: rgb(127, 99, 5) 7px solid;
     margin: 0 auto;
+    padding: 2rem 0;
     width: 100%;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content:center; */
+    justify-content: space-evenly;
 }
+
 .aboutBlock2 ul {
     margin: 0 auto;
+    
 }
 .aboutBlock2 h1 {
-    font-size: 1.7rem;
-    margin: 2rem auto;
-    margin-top: 4rem;
+    font-size: 2rem;
+    margin: 4rem auto;    
+}
+.skils {
+    height: 100%;
 }
 .aboutBlock2 li {
     box-sizing: border-box;
     /* padding-left: 7rem; */
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     font-size: 1.4rem;
     font-weight: 500;
     text-align: left;
     line-height: 3rem;
 }
+.react_parts li {
+ font-size: 1.1rem;
+ font-weight: 400;   
+}
 
 @media(max-width: 1260px) {
     .aboutMain h1 {
-        font-size: 1.4rem;
+        font-size: 2rem;
     }
     .aboutBlock1 p {
         padding: 0.3rem 3rem;
-        font-size: 1rem;
+        font-size: 1.8rem;
         text-align: left;
-        line-height: 1.4rem;
+        line-height: 1.8rem;
     }
     .aboutBlock1 button {
         margin-top: 1.4rem;
@@ -81,10 +100,15 @@
     }
     
     .aboutBlock2 li {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         text-align: left;
-        line-height: 1.7rem;
+        line-height: 3rem;
     }
+    .react_parts li {
+        font-size: 1rem;
+        font-weight: 300;   
+       }
+       
 }
 
 @media (max-width: 1200px) {

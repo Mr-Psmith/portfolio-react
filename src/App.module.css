@@ -7,9 +7,10 @@
     padding: 0;
     display: grid;
     grid-template-columns: 90% 10%;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 10% 85% 5%;
     color: rgb(176, 136, 7);
 }
+
 /* .appSection1 {
     height: 100vh;
     display: grid;

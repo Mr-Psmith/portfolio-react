@@ -5,7 +5,7 @@
     box-sizing: border-box;
     background-color: rgba(34, 32, 19, 0.372);
     width: 80vw;
-    height: 72vh;
+    height: 75vh;
     margin: auto;
     border-radius: 15px;
     display: flex;
@@ -22,6 +22,17 @@
     box-sizing: border-box;
     padding: 3rem;
     width: 50%;
+}
+.contactUnvisibleblock2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contactUnvisibleblock2__icons {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .contactUnvisibleblock1 {
     max-width: 30rem;
@@ -86,16 +97,28 @@
     text-align: center;
     border-left: rgb(127, 99, 5) 7px solid;
 }
+.picPlus__wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .contactUnvisibleblock2 .picPlus {
-    width: 17rem;
+    width: 25rem;
     margin: 2rem auto;
+    
+}
+.contactUnvisibleblock2__icon_iconsSry {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
 }
 .contactUnvisibleblock2 .fac,
 .contactUnvisibleblock2 .inst,
 .contactUnvisibleblock2 .github,
 .contactUnvisibleblock2 .twitter {
-    width: 3rem;
-    margin: 0 0.5rem;
+    width: 5rem;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -115,5 +138,37 @@
 @media (max-width: 1200px) {
     .contactMain {
         left: 10vw;
+    }
+    .contactUnvisibleblock2 .picPlus {
+        width: 17rem;
+        margin: 0 auto;
+    }
+    .contactUnvisibleblock2 .fac,
+    .contactUnvisibleblock2 .inst,
+    .contactUnvisibleblock2 .github,
+    .contactUnvisibleblock2 .twitter {
+        width: 4rem;   
+    }
+}
+@media (max-width: 900px) {
+    .contactUnvisibleblock2 .picPlus {
+        width: 13rem;
+    }
+    .contactUnvisibleblock2 .fac,
+    .contactUnvisibleblock2 .inst,
+    .contactUnvisibleblock2 .github,
+    .contactUnvisibleblock2 .twitter {
+        width: 3rem;   
+    }
+}
+@media (max-width: 700px) {
+    .contactUnvisibleblock2 .picPlus {
+        width: 11rem;
+    }
+    .contactUnvisibleblock2 .fac,
+    .contactUnvisibleblock2 .inst,
+    .contactUnvisibleblock2 .github,
+    .contactUnvisibleblock2 .twitter {
+        width: 2rem;   
     }
 }
