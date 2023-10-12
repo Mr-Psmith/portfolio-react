@@ -119,17 +119,16 @@
 .contactUnvisibleblock2 .github,
 .contactUnvisibleblock2 .twitter {
     width: 5rem;
-    border-radius: 10px;
+    border-radius: 17px;
     cursor: pointer;
 }
 .contactUnvisibleblock2 .fac:hover,
 .contactUnvisibleblock2 .inst:hover,
-.contactUnvisibleblock2 .twitter:hover {
-    background-color: whitesmoke;
-}
+.contactUnvisibleblock2 .twitter:hover,
 .contactUnvisibleblock2 .github:hover {
-    background-color: blue;
+    background-color: rgb(72, 72, 72);
 }
+
 .contactUnvisibleblock2 .github,
 .contactUnvisibleblock2 .twitter {
     border-radius: 200px;

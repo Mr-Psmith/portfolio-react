@@ -39,8 +39,9 @@
     line-height: 2.5rem;
 }
 .aboutBlock1 button {
-    margin: 4rem 0;
-    padding: 0.4rem;
+    margin: auto;
+    margin-top: 7rem;
+    padding: 0.7rem;
     font-size: 1.7rem;
     font-weight: 700;
     border-radius: 10px;

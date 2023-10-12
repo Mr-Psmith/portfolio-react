@@ -6,50 +6,65 @@
     background-color: rgba(34, 32, 19, 0.372);
     width: 80vw;
     height: 75vh;
-    padding: 1rem 0;
+    padding: 5rem 3vw;
     margin: auto;
     border-radius: 15px;
     /* transition: transform 4s ease-in-out;
     transform: translateX(101%); */
     transform: translateX(100%);
+    line-height: 3.2rem;
 }
 .main h1 {
-    font-size: 2.5rem;
+    margin: 5rem 0;
+    font-size: 3rem;
 }
 .main h3 {
     font-size: 2rem;
 }
 .main p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 .main h4 {
     font-size: 2rem;
 }
 .button {
+    margin: 4rem auto;
+    width: 250px;
+    height: 70px;
+    font-size: 2rem;
+    background-color: rgb(176, 136, 7);
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: whitesmoke;
+}
+/* .button {
     margin: auto;
     width: 300px;
-    height: 60x;
+    height: 50x;
     display: flex;
     flex-direction: row;
     justify-content: baseline;
-}
-.triangl {
+} */
+/* .triangl {
     width: 0;
     height: 0;
-    border-top: 60px solid #213971;
-    border-right: 60px solid transparent;
-}
-.rect {
-    width: 300px;
+    border-top: 70px solid rgb(176, 136, 7);
+    border-right: 75px solid transparent;
+} */
+/* .rect {
+    width: 20vw;
     height: 60px;
     font-size: 2rem;
-    background-color: #213971;
-    text-decoration: none;
+    background-color: rgb(176, 136, 7);
     font-weight: bold;
     padding: 0.5rem;
-    /* border-radius: 10px; */
+    border-radius: 10px;
     cursor: pointer;
-}
+    color: whitesmoke;
+} */
+
 @media (max-width: 1200px) {
     .main {
         left: 10vw;
