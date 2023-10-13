@@ -2,10 +2,10 @@
     position: fixed;
     top: 4vh;
     left: 5vw;
-    box-sizing: border-box;
-    background-color: rgba(34, 32, 19, 0.372);
     width: 80vw;
     height: 75vh;
+    box-sizing: border-box;
+    background-color: rgba(34, 32, 19, 0.372);
     margin: auto;
     border-radius: 15px;
     display: flex;
@@ -126,7 +126,7 @@
 .contactUnvisibleblock2 .inst:hover,
 .contactUnvisibleblock2 .twitter:hover,
 .contactUnvisibleblock2 .github:hover {
-    background-color: rgb(72, 72, 72);
+    background-color: rgb(3, 43, 43);
 }
 
 .contactUnvisibleblock2 .github,
@@ -161,6 +161,9 @@
     }
 }
 @media (max-width: 700px) {
+    .contactMain {
+        top: 7vh;
+    }
     .contactUnvisibleblock2 .picPlus {
         width: 11rem;
     }

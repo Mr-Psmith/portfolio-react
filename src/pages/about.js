@@ -13,15 +13,22 @@ function About(props) {
                             <h1>About Me:</h1>
                         </div>
                         <div className={classes.aboutBlock1_desc}>
-                        <p>I was interested in the tech-world from my youth, first I built computers, than after some longer self-searching I found programming which got a hold on me.</p>
+                            <p className={classes.aboutBlock1_descP}>I was interested in the tech-world from my youth, first I built computers, than after some longer self-searching I found programming which got a hold on me.</p>
 
-                        <p>I mastered Css, Javascript, and React, finished my portfolio, and I am currently learning NodeJs while I am working freelance.</p>
+                            <p className={classes.aboutBlock1_descP}>I mastered Css, Javascript, and React, finished my portfolio, and I am currently learning NodeJs while I am working freelance.</p>
 
-                        <p>Of course I have great experience in Web-hosting, and in the connecting fields too.</p>
+                            <p className={classes.aboutBlock1_descP}>Of course I have great experience in Web-hosting, and in the connecting fields too.</p>
 
-                        <p>Right now I am interested in opportunities in the above mentioned areas, as well as in connecting ones.</p>
+                            <p className={classes.aboutBlock1_descP}>Right now I am interested in opportunities in the above mentioned areas, as well as in connecting ones.</p>
 
-                        <button onClick={props.contactButtonHandlerPr}>Get In Tuch</button>
+                            <div className={classes.buttonAbout} onClick={props.contactButtonHandlerPr}>
+
+
+                                <motion.div initial={{ x: "-80vw" }} animate={{ x: props.contactButtonHandlerPr ? "0vw" : 0, opacity: props.contactButtonHandlerPr ? 1 : 0 }} transition={{ delay: 0.2, duration: 0.3, type: "spring", bounce: 0.2 }} exit={{ x: "-80vw" }} className={classes.triangl1About}></motion.div>
+                                <p className={classes.button__descrAbout}>Get in Tuch!</p>
+                                <motion.div initial={{ x: "80vw" }} animate={{ x: props.welcomeSlidePr ? "0vw" : 0, opacity: props.contactButtonHandlerPr ? 1 : 0 }} transition={{ delay: 0.2, duration: 0.3, type: "spring", bounce: 0.2 }} exit={{ x: "80vw" }} className={classes.triangl2About}></motion.div>
+                            </div>
+                            {/* <button onClick={props.contactButtonHandlerPr}>Get In Tuch</button> */}
                         </div>
                     </div>
 

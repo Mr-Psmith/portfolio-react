@@ -15,10 +15,13 @@ function Welcome(props) {
                     <h3>I am a web developer - designer, writer, web-magazin-editor and builder</h3>
                     <p>I like to make beautiful Custom websites with React, - Javascript, Css, for making them simple, fast, yet elegant</p>
                     <h4>Let's work together, help each-other growing!</h4>
-                    <button className={classes.button} onClick={props.contactButtonHandlerPr}>Contact Me!
+                    <div className={classes.button} onClick={props.contactButtonHandlerPr}>
                         {/* <div onClick={props.contactButtonHandlerPr} className={classes.rect}>Contact Me!</div> */}
-                        {/* <div className={classes.triangl}></div> */}
-                    </button>
+                        <button className={classes.button__descr}>Contact Me!</button>
+                        <motion.div initial={{x: "-90vw"}} animate={{ x: props.contactButtonHandlerPr ? "0vw" : 0, opacity: props.contactButtonHandlerPr ? 1 : 0 }} transition={{ delay:0.2, duration: 0.3, type: "spring", bounce: 0.2 }} exit={{ x: "-90vw" }} className={classes.triangl1}></motion.div>
+                        
+                        <motion.div initial={{x: "90vw"}} animate={{ x: props.welcomeSlidePr ? "0vw" : 0, opacity: props.contactButtonHandlerPr ? 1 : 0 }} transition={{ delay:0.2, duration: 0.3, type: "spring", bounce: 0.2 }} exit={{ x: "90vw" }} className={classes.triangl2}></motion.div>
+                    </div>
                 </div>
             </motion.div>
             {/* </div> */}

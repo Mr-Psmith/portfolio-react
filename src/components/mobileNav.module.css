@@ -39,10 +39,10 @@
 .fac:hover,
 .inst:hover,
 .twitter:hover {
-    background-color: whitesmoke;
+    background-color: rgb(3, 43, 43);
 }
 .github:hover {
-    background-color: blue;
+    background-color: rgb(3, 43, 43);
 }
 .github,
 .twitter {

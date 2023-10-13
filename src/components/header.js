@@ -1,4 +1,3 @@
-import LanguageSelect from "./language-select";
 import NameDesignation from "./name-designation";
 
 import classes from "./header.module.css"
