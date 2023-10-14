@@ -142,7 +142,7 @@ function App() {
         <div className={classes.App}>
             <section className={classes.appSection1}>
                 <section className={classes.header}>
-                    <Hamburger hamburgerClickHandlerPr={hamburgerClickHandler} />
+                    {!mobileNavOpen ? <Hamburger hamburgerClickHandlerPr={hamburgerClickHandler} /> : ""} 
                     <Header />
                     <AnimatePresence>
                     {mobileNavOpen ? <MobileNavi mobileNavOpenPr={mobileNavOpen} welcomeHandlerPr={welcomeHandler} worksHandlerPr={worksHandler} aboutHandlerPr={aboutHandler} connectHandlerPr={connectHandler}/> : ""}
