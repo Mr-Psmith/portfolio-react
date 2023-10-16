@@ -6,12 +6,17 @@ import { motion } from "framer-motion";
 function NameDesignation() {
   const [nameSwitch, setNameSwitch] = useState("");
 
+  const timeoutedHoverHandler = event => {
+
+  }
   function hoverHandler() {
-    if (!nameSwitch) {
-      setNameSwitch(true);
-    } else {
-      setNameSwitch(false);
-    }
+    setTimeout(() => {
+      if (!nameSwitch) {
+        setNameSwitch(true);
+      } else {
+        setNameSwitch(false);
+      }
+    }, 500);
   }
 
   return (

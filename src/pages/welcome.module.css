@@ -6,26 +6,26 @@
     height: 75vh;
     box-sizing: border-box;
     background-color: rgba(34, 32, 19, 0.372);
-    padding: 5rem 3vw;
+    padding: 5vh 3vw;
     margin: auto;
     border-radius: 15px;
     /* transition: transform 4s ease-in-out;
     transform: translateX(101%); */
     transform: translateX(100%);
-    line-height: 3.2rem;
+    line-height: 3.5vh;
 }
 .main h1 {
-    margin: 5rem 0;
-    font-size: 3rem;
+    margin: 5vh 0;
+    font-size: 2.5rem;
 }
 .main h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 .main p {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 .main h4 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 /* .button {
     margin: 4rem auto;
@@ -39,13 +39,13 @@
     cursor: pointer;
     color: whitesmoke;
 } */
-.button {
+/* .button {
     position: relative;
-    top: 5rem;
+    top: 4vh;
     left: 0;
     margin: auto;
     width: 300px;
-    height: 50x;
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: baseline;
@@ -60,9 +60,6 @@
     border-top: 90px solid rgb(42, 35, 4);
     border-right: 320px solid transparent;
 }
-/* .triangl1:hover {
-    border-top: 90px solid red;
-} */
 .button__descr {
     position: absolute;
     font-size: 34px;
@@ -87,36 +84,86 @@
     border-right: 320px solid rgb(3, 43, 43);
     border-top: 90px solid transparent;
 }
-/* .triangl2:hover {
-    border-right: 320px solid rgb(42, 35, 4);
-} */
-/* .rect {
-    width: 20vw;
-    height: 60px;
-    font-size: 2rem;
-    background-color: rgb(176, 136, 7);
-    font-weight: bold;
-    padding: 0.5rem;
-    border-radius: 10px;
+ */
+ .button {
+    position: relative;
+    top: 5vh;
+    left: 0vw;
+    margin: auto;
+    width: 17rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
     cursor: pointer;
-    color: whitesmoke;
-} */
-
+}
+.triangl1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 5rem solid rgb(42, 35, 4);
+    border-right: 17rem solid transparent;
+}
+.button__descr {
+    position: relative;
+    font-size: 1.5rem;
+    width: 17rem;
+    top: 0rem;
+    left: 0;
+    color: rgb(176, 136, 7);
+    z-index: 5;
+    background-color: transparent;
+    border: none;
+}
+.button__descr:hover {
+    color: white;
+    background-color: transparent;
+}
+.triangl2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-right: 17rem solid rgb(3, 43, 43);
+    border-top: 5rem solid transparent;
+}
 @media (max-width: 1200px) {
     .main {
         left: 10vw;
+    }
+    .main h1 {
+        margin: 1vh 0;
+        margin-bottom: 1.5vh;
+    }
+}
+@media (max-width: 800px) {
+    .main h1 {
+        margin: 1vh 0;
+        margin-bottom: 1.5vh;
+    }
+    .main h3 {
+        font-size: 1.5rem;
+    }
+    .main p {
+        font-size: 1.3rem;
+    }
+    .main h4 {
+        font-size: 1.4rem;
     }
 }
 
 @media (max-width: 600px) {
     .main {
         padding: 0;
-        line-height: 2rem;
+        line-height: 3.2vh;
         top: 7vh;
     }
     
     .main h1 {
-        margin: 1rem 0;
+        margin: 4vh 0;
         font-size: 1.7rem;
     }
     .main h3 {
@@ -128,10 +175,10 @@
     .main h4 {
         font-size: 1rem;
     }
-    .button {
+    /* .button {
         position: relative;
-        top: 5rem;
-        left: 0;
+        top: 5vh;
+        left: 2vw;
         margin: auto;
         width: 300px;
         height: 50x;
@@ -168,5 +215,44 @@
         height: 0;
         border-right: 270px solid rgb(3, 43, 43);
         border-top: 70px solid transparent;
+    } */
+    .button {
+        top: 5vh;
+        left: 0vw;
+        margin: auto;
+        width: 12rem;
+        height: 3rem;
+    }
+    .triangl1 {
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 3rem solid rgb(42, 35, 4);
+        border-right: 12rem solid transparent;
+    }
+    .button__descr {
+        position: relative;
+        font-size: 1rem;
+        width: 17rem;
+        top: 0rem;
+        left: 0;
+        color: rgb(176, 136, 7);
+        z-index: 5;
+        background-color: transparent;
+        border: none;
+    }
+    .button__descr:hover {
+        color: white;
+        background-color: transparent;
+    }
+    .triangl2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-right: 12rem solid rgb(3, 43, 43);
+        border-top: 3rem solid transparent;
     }
 }

@@ -249,3 +249,74 @@
         border-top: 3rem solid transparent;
     }
 }
+@media (max-width: 400px) {
+    ul {
+        padding-inline-start: 3vw;
+    }
+    .aboutMain h1 {
+        font-size: 1.2rem;
+    }
+    .aboutBlock1_descP {
+        font-size: 1rem;
+        text-align: left;
+    }
+    .aboutBlock2 {
+        border-left: rgb(127, 99, 5) 7px solid;
+        margin: 0 auto;
+        padding: 2vh 0;
+        width: 100%;
+    }    
+    .aboutBlock2 li {
+        font-size: 1rem;
+        text-align: left;
+        line-height: 3vh;
+    }
+    .react_parts {
+        font-size: 0.5rem;
+        font-weight: 200;   
+        padding-inline-start: 2vw;
+    }
+    .react_parts li {
+        font-size: 0.8rem;
+        font-weight: 200;   
+    }
+    .buttonAbout {
+        top: 5vh;
+        left: 0vw;
+        margin: auto;
+        width: 12rem;
+        height: 3rem;
+    }
+    .triangl1About {
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 3rem solid rgb(42, 35, 4);
+        border-right: 12rem solid transparent;
+    }
+    .button__descrAbout {
+        position: relative;
+        font-size: 1rem;
+        width: 17rem;
+        top: 0rem;
+        left: 0;
+        color: rgb(176, 136, 7);
+        z-index: 5;
+        background-color: transparent;
+        border: none;
+    }
+    .button__descrAbout:hover {
+        color: white;
+        background-color: transparent;
+    }
+    .triangl2About {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-right: 12rem solid rgb(3, 43, 43);
+        border-top: 3rem solid transparent;
+    }
+}
