@@ -254,11 +254,13 @@
         padding-inline-start: 3vw;
     }
     .aboutMain h1 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .aboutBlock1_descP {
-        font-size: 1rem;
+        font-size: 0.7rem;
         text-align: left;
+        font-weight: lighter;
+        line-height: 2vh;
     }
     .aboutBlock2 {
         border-left: rgb(127, 99, 5) 7px solid;
@@ -267,18 +269,17 @@
         width: 100%;
     }    
     .aboutBlock2 li {
-        font-size: 1rem;
+        font-size: 0.8rem;
         text-align: left;
         line-height: 3vh;
     }
     .react_parts {
-        font-size: 0.5rem;
         font-weight: 200;   
         padding-inline-start: 2vw;
     }
     .react_parts li {
-        font-size: 0.8rem;
-        font-weight: 200;   
+        font-size: 0.7rem;
+        font-weight: 200;
     }
     .buttonAbout {
         top: 5vh;

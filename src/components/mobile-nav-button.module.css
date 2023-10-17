@@ -27,3 +27,21 @@
         display: none;
     }
 }
+@media (max-width: 400px) {
+    .hamburgerMain {
+        padding: 0.2rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    .hamburgerLines {
+        display: block;
+        margin: 0.2rem auto;
+        border-radius: 4px;
+        opacity: 1;
+        width: 3rem;
+        height: 0.4rem;
+    }
+}
