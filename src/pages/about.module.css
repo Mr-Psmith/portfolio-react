@@ -190,8 +190,6 @@
         text-align: left;
     }
     .aboutBlock2 {
-        border-left: rgb(127, 99, 5) 7px solid;
-        margin: 0 auto;
         padding: 2vh 0;
         width: 100%;
     }    
@@ -319,5 +317,53 @@
         height: 0;
         border-right: 12rem solid rgb(3, 43, 43);
         border-top: 3rem solid transparent;
+    }
+}
+@media(max-width: 300px) {
+    .aboutMain {
+        top: 7vh;
+        left: -5vw;
+        width: 90vw;
+        height: 75vh;
+    }
+    .aboutBlock1 {
+        width: 50vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 0.05rem;
+    }
+    .aboutBlock1_descP {
+        font-size: 0.65rem;
+        line-height: 1.8vh;
+        font-weight: 400;
+    }
+    .triangl1About {
+        border-top: 2rem solid rgb(42, 35, 4);
+        border-right: 8rem solid transparent;
+    }
+    .button__descrAbout {
+        font-size: 0.7rem;
+        width: 10rem;
+        top: -0.3rem;
+        left: -4vw;
+    }
+    .triangl2About {
+        border-right: 8rem solid rgb(3, 43, 43);
+        border-top: 2rem solid transparent;
+    }
+    .aboutBlock2 li {
+        font-size: 0.7rem;
+        text-align: left;
+        line-height: 3vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 0.05rem;
+        font-weight: 400;
+    }
+    .react_parts {
+        font-weight: 200;   
+        padding-inline-start: 2vw;
+    }
+    .react_parts li {
+        font-size: 0.6rem;
+        font-weight: 400;
     }
 }

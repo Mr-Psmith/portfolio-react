@@ -28,7 +28,7 @@ function Works(props) {
                   <img src={tan} className={classes.tanC} alt="" onClick={props.tanPrHandler}></img>
                 </div>
                 <div  className={classes.descript} >
-                  <p>This site is the prototype copy of my Theoria Natura webmagazine, a small webmagazin which I made in 2022 as part of my resume. It uses pure Javascript, CSS, Html.</p>
+                  <p>This site is the prototype of my Theoria Natura webmagazine, a small webmagazin which I made in 2022 as part of my resume. It uses Javascript, CSS, Html.</p>
                 </div>
               </div>
               <div className={classes.work2} >

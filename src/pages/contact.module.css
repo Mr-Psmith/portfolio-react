@@ -178,15 +178,13 @@
 
     .contactMain {
         position: fixed;
-        top: 3vh;
+        top: 7vh;
         left: 3vw;
         width: 85vw;
         height: 75vh;
         font-size: 1.4rem;
     }
-/*     .contactUnvisibleblock1_1__containers {
-        width: 100%;
-    } */
+
     .contactUnvisibleblock1,
     .contactUnvisibleblock2 {
         margin: 5vh 0vw;
@@ -195,16 +193,8 @@
     }
     .contactUnvisibleblock1 {
         display: none;
-        /* display: flex;
-        flex-direction: row;
-        justify-content: baseline; */
     }
-    /* .contactFormEmailLabel {
-        width: 80%;
-    }
-    .formContactMessageTextarea {
-        width: 100%;
-    } */
+   
     .contactUnvisibleblock2 {
         padding-bottom: 3vh;
         text-align: center;
@@ -213,35 +203,26 @@
         border-top: rgb(127, 99, 5) 7px solid;
         border-bottom: rgb(127, 99, 5) 7px solid;
     }
-    /* .contactUnvisibleblock2__icons__h1 {
-        visibility: hidden;
+    
+    .contactUnvisibleblock2 .fac,
+    .contactUnvisibleblock2 .inst,
+    .contactUnvisibleblock2 .github,
+    .contactUnvisibleblock2 .twitter {
+        width: 3.5rem;   
     }
-    .contactUnvisibleblock2__icons__h1::after {
-        content: "You can find me on:";
-        position: fixed;
-        top: 1vh;
-        left: 1vh;
-        background-color: aliceblue;
-        width: 2vw;
-        height: 2vh;
-        display: block;
-    } */
-    .contactUnvisibleblock2 .picPlus {
-        width: 5vw;
+}
+@media(max-width: 300px) {
+    .contactMain {
+        top: 7vh;
+        left: -5vw;
+        width: 90vw;
+        height: 80vh;
     }
     .contactUnvisibleblock2 .fac,
     .contactUnvisibleblock2 .inst,
     .contactUnvisibleblock2 .github,
     .contactUnvisibleblock2 .twitter {
-        width: 2rem;   
+        width: 3rem;   
     }
-    .contactUnvisibleblock2 .picPlus {
-        width: 17rem;
-    }
-    .contactUnvisibleblock2 .fac,
-    .contactUnvisibleblock2 .inst,
-    .contactUnvisibleblock2 .github,
-    .contactUnvisibleblock2 .twitter {
-        width: 4rem;   
-    }
+
 }

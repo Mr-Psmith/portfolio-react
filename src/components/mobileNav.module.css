@@ -60,8 +60,6 @@
     }
     
     .socalPicsMobileNav {
-        padding: 1vh 1vw;
-        margin: 0 10vw;
         height: 7vh;
     }
     
@@ -71,22 +69,31 @@
     .twitter {
         width: 3rem;
     }
-    .fac:hover,
-    .inst:hover,
-    .twitter:hover {
-        background-color: rgb(3, 43, 43);
-    }
-    .github:hover {
-        background-color: rgb(3, 43, 43);
-    }
-    .github,
-    .twitter {
-        border-radius: 200px;
-    }
 }
 @media (max-width: 400px) {
     .socalPicsMobileNav {
         margin: 0 2vw;
+    }
+    
+    .fac,
+    .inst,
+    .github,
+    .twitter {
+        width: 2.5rem;
+    }
+}
+@media(max-width: 300px) {
+    .mainContainerMobileNav ul {
+        padding-top: 5vh;
+        margin: 3vh auto;
+    }
+    .mainContainerMobileNav li {
+        font-size: 2rem;
+        margin: 6vh auto;
+    }
+    
+    .socalPicsMobileNav {
+        height: 7vh;
     }
     
     .fac,
