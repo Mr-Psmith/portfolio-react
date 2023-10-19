@@ -48,7 +48,7 @@
 .socalPics {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     position: fixed;
     bottom: 1rem;
     width: 10.5%;
