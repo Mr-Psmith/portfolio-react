@@ -4,7 +4,7 @@ import classes from "./header.module.css"
 import Logo from "./logo";
 
 
-function Header () {
+function Header (props) {
 
     return (
         <>

@@ -27,3 +27,7 @@ code {
   src: local("lumiera"), url("./fonts/Lumiera.woff");
   font-family: "Lumiera";
 }
+@font-face {
+  src: local("enchanted"), url("./fonts/EnchantedLand.otf");
+  font-family: "EnchantedLand";
+}
