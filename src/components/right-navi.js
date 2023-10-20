@@ -3,7 +3,6 @@ import facPic from "../img/fac.jpg";
 import gith from "../img/github.png";
 import inst from "../img/insta.png";
 import twit from "../img/twit.png";
-import { useState } from "react";
 
 function Navi(props) {
 
@@ -11,16 +10,16 @@ function Navi(props) {
         <>
             <div className={classes.mainContainer}>
                 <ul className={classes.ul}>
-                    <li className={classes.li} onClick={props.welcomeHandlerPr /* welcomeSlideHandler */}> 
+                    <li className={classes.li} onClick={props.welcomeHandlerPr}> 
                         Welcome
                     </li>
-                    <li className={classes.li} onClick={props.worksHandlerPr /* worksSlideHandler */}>
+                    <li className={classes.li} onClick={props.worksHandlerPr}>
                         Works
                     </li>
-                    <li className={classes.li} onClick={props.aboutHandlerPr /* aboutSlideHandler */}>
+                    <li className={classes.li} onClick={props.aboutHandlerPr}>
                         About
                     </li>
-                    <li className={classes.li} onClick={props.connectHandlerPr/* connectSlideHandler */}>
+                    <li className={classes.li} onClick={props.connectHandlerPr}>
                         Contact
                     </li>
                     <div className={classes.socalPics}>

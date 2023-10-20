@@ -14,8 +14,6 @@
     padding: 0rem;
     display: flex;
     flex-direction: column;
-    /* justify-content:baseline;
-    align-self:flex-end; */
 }
 
 .li {
@@ -58,8 +56,6 @@
     width: 2rem;
     display: flex;
     flex-direction: row;
-
-    /* margin: 0 auto; */
 }
 .fac,
 .inst,
@@ -100,14 +96,5 @@
         display: none;
     }
 
-}
-
-.arrow {
-    width: 1rem;
-    height: 2rem;
-    position: relative;
-    top: 0;
-    right: 10rem;
-    background-image: url(../img/arrowVektWhite.png) cover;
 }
 

@@ -12,7 +12,6 @@
     margin: auto;
     z-index: 201;
     border: rgb(127, 99, 5) 3px solid;
-    /* transform: translateX(150%); */
     animation: slideIn 0.4s ease-in-out forwards;
 }
 

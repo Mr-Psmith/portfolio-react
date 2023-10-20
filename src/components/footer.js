@@ -10,9 +10,6 @@ function Footer() {
                         psancthus@gmail.com
                     </button>
                 </li>
-                {/* <li className={classes.mainFooter__link}>
-                    <button className={classes.link} onClick={props.termsHandlerPr}>Terms of Use</button>
-                </li> */}
             </div>
         </>
     );

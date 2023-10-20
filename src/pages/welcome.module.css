@@ -9,8 +9,6 @@
     padding: 5vh 3vw;
     margin: auto;
     border-radius: 15px;
-    /* transition: transform 4s ease-in-out;
-    transform: translateX(101%); */
     transform: translateX(100%);
     line-height: 3.5vh;
 }
@@ -27,64 +25,7 @@
 .main h4 {
     font-size: 1.8rem;
 }
-/* .button {
-    margin: 4rem auto;
-    width: 250px;
-    height: 70px;
-    font-size: 2rem;
-    background-color: rgb(176, 136, 7);
-    font-weight: bold;
-    padding: 0.5rem;
-    border-radius: 10px;
-    cursor: pointer;
-    color: whitesmoke;
-} */
-/* .button {
-    position: relative;
-    top: 4vh;
-    left: 0;
-    margin: auto;
-    width: 300px;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    cursor: pointer;
-}
-.triangl1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-top: 90px solid rgb(42, 35, 4);
-    border-right: 320px solid transparent;
-}
-.button__descr {
-    position: absolute;
-    font-size: 34px;
-    width: 200px;
-    top: 24px;
-    left: 60px;
-    color: rgb(176, 136, 7);
-    z-index: 5;
-    background-color: transparent;
-    border: none;
-}
-.button__descr:hover {
-    color: white;
-    background-color: transparent;
-}
-.triangl2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-right: 320px solid rgb(3, 43, 43);
-    border-top: 90px solid transparent;
-}
- */
+
  .button {
     position: relative;
     top: 5vh;
@@ -175,47 +116,6 @@
     .main h4 {
         font-size: 1rem;
     }
-    /* .button {
-        position: relative;
-        top: 5vh;
-        left: 2vw;
-        margin: auto;
-        width: 300px;
-        height: 50x;
-    }
-    .triangl1 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 0;
-        border-top: 70px solid rgb(42, 35, 4);
-        border-right: 270px solid transparent;
-    }
-    .button__descr {
-        position: absolute;
-        font-size: 24px;
-        width: 150px;
-        top: 20px;
-        left: 60px;
-        color: rgb(176, 136, 7);
-        z-index: 5;
-        background-color: transparent;
-        border: none;
-    }
-    .button__descr:hover {
-        color: white;
-        background-color: transparent;
-    }
-    .triangl2 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 0;
-        border-right: 270px solid rgb(3, 43, 43);
-        border-top: 70px solid transparent;
-    } */
     .button {
         top: 5vh;
         left: 0vw;

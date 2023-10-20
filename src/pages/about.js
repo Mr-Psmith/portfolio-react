@@ -1,4 +1,3 @@
-//import CSSTransition from "react-transition-group/CSSTransition";
 import classes from "./about.module.css";
 import "./transition.css"
 import { motion } from "framer-motion";
@@ -28,7 +27,6 @@ function About(props) {
                                 <p className={classes.button__descrAbout}>Get in Tuch!</p>
                                 <motion.div initial={{ x: "70vw" }} animate={{ x: props.welcomeSlidePr ? "0vw" : 0, opacity: props.contactButtonHandlerPr ? 1 : 0 }} transition={{ delay: 0.2, duration: 0.3, type: "spring", bounce: 0.2 }} exit={{ x: "70vw" }} className={classes.triangl2About}></motion.div>
                             </div>
-                            {/* <button onClick={props.contactButtonHandlerPr}>Get In Tuch</button> */}
                         </div>
                     </div>
 
@@ -38,7 +36,6 @@ function About(props) {
                             <li>Javascript</li>
                             <li>React</li>
                             <ul className={classes.react_parts}>
-                                <li>CSS-Modules</li>
                                 <li>Redux</li>
                                 <li>React-router</li>
                                 <li>Framer-Motion</li>
@@ -46,6 +43,7 @@ function About(props) {
                             <li>Typescript</li>
                             {/* <li>Next.js</li> */}
                             <li>CSS/Html</li>
+                            <li>CSS-Modules</li>
                             <li>Tailwind CSS</li>
                             <li>Git</li>
                             <li>Github</li>

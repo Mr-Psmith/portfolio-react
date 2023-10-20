@@ -6,27 +6,8 @@ import gith from "../img/github.png";
 import pic from "../img/f037.png";
 import "./transition.css"
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 
 function Contact(props) {
-    /* const [h1, seth1] = useState();
-    const [width, setWidth] = useState(window.innerWidth);
-    const breakpoint = 600;
-    useEffect(() => {
-        const handleResizeWindow = () => setWidth(window.innerWidth);
-        // subscribe to window resize event "onComponentDidMount"
-        window.addEventListener("resize", handleResizeWindow);
-        return () => {
-            // unsubscribe "onComponentDestroy"
-            window.removeEventListener("resize", handleResizeWindow);
-        };
-    }, [h1, width]);
-    if (width > breakpoint) {
-        seth1(<h1 >Or you can find me on: </h1>);
-    } else {
-        seth1(<h1 >You can find me on: </h1>);
-    }
- */
 return (
     <>
         <motion.div animate={{ x: props.contactSlidePr ? "-90%" : 0, opacity: props.contactSlidePr ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }}>

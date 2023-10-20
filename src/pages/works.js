@@ -1,22 +1,13 @@
 import classes from "./works.module.css";
-//import CSSTransition from "react-transition-group/CSSTransition";
 import "./transition.css";
 import { motion } from "framer-motion";
 
 import oldPortf from "../img/works-oldPortf.jpg";
 import tan from "../img/tan.jpg";
-//import { useRef } from "react";
 
 function Works(props) {
-  //const animationTiming = { enter: 700, exit: 700 };
-
-  /* const classChange = ["mainn", props.worksSlidePr ? "slideIn" : "slideOut"]; */
-  /* const classAll = {`${classes.main}`}
-  ["main", props.worksSlidePr ? "opened" : "closed"];   classAll.join(" ") */
-
   return (
     <>
-      {/* <CSSTransition ref={ref} mountOnEnter unmountOnExit in={props.worksSlidePr} timeout={700} classNames="slides"> */}
       <motion.div animate={{x: props.worksSlidePr ? "-90%" : 0, opacity: props.worksSlidePr ? 1 : 0}} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{x: "90%"}} className={classes.mainWorks}>
         <div className={classes.mainn} id="works">
           <h1>Here are some of my works:</h1>
@@ -40,44 +31,8 @@ function Works(props) {
                 </div>
               </div>
             </div>
-
-            {/*  <div class="smiley-box">
-            <img className={classes.smiley} src="" alt=""></img>
-          </div> */}
-
-            {/* <div className={classes.block2}>
-            <div class="block3 block">
-              <button class="subblock subblock3 subblock-left">
-                <img
-                  src={startAzores}
-                  className={classes.startAzoresC}
-                  alt=""
-                ></img>
-              </button>
-              <div class="subblock3-descript subblock-descript">
-                <p>
-                  This will be a photogallery side-project on a subdomain of the
-                  ("TAN")magazine. I hope I will have the time for building it
-                  soon. For the moment <bold>I SHOULD HIDE IT </bold>
-                </p>
-              </div>
-            </div>
-            <div class="block4 block">
-              <div class="subblock4-descript subblock-descript subblock-descript__upper">
-                <p>
-                  This is a half part joke, half part marketing style site,
-                  where I try to sell myself a little funnier like before, but
-                  hell knows, maybe <bold>I SHOULD HIDE THIS AS WELL</bold>
-                </p>
-              </div>
-              <button class="subblock subblock4 subblock-right">
-                <img src={tan} className={classes.tanC} alt=""></img>
-              </button>
-            </div>
-          </div> */}
           </div>
         </div>
-      {/* </CSSTransition> */}
       </motion.div>
     </>
   );

@@ -1,0 +1,82 @@
+.main__loader {
+    background-color: black;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 775;
+}
+.pWord__loader {
+    font-family: "EnchantedLand";
+    margin: 0 auto;
+    line-height: 0;
+    position: fixed;
+    top: 45vh;
+    left: 45vw;
+    font-size: 14rem;
+    font-weight: 400;
+    z-index: 777;
+}
+.sWord__loader {
+    font-family: "EnchantedLand";
+    margin: 0 auto;
+    line-height: 0;
+    position: fixed;
+    top: 55vh;
+    left: 47.5vw;
+    font-size: 14rem;
+    font-weight: 400;
+    z-index: 777;
+}
+@media (max-width: 1400px) {
+    .pWord__loader {
+        top: 42vh;
+        left: 45vw;
+    }
+    .sWord__loader {
+        top: 57vh;
+        left: 47.5vw;
+    }
+}
+@media (max-width: 1200px) {
+    .pWord__loader {
+        top: 42vh;
+        left: 45vw;
+    }
+    .sWord__loader {
+        top: 58vh;
+        left: 47.5vw;
+    }
+}
+@media (max-width: 850px) {
+    .pWord__loader {
+        top: 44vh;
+        left: 44vw;
+    }
+    .sWord__loader {
+        top: 55vh;
+        left: 48.5vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .pWord__loader {
+        top: 40vh;
+        left: 37vw;
+    }
+    .sWord__loader {
+        top: 59vh;
+        left: 43.5vw;
+    }
+}
+@media (max-width: 300px) {
+    .pWord__loader {
+        top: 38vh;
+        left: 30vw;
+    }
+    .sWord__loader {
+        top: 61vh;
+        left: 38.5vw;
+    }
+}

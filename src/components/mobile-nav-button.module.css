@@ -19,7 +19,7 @@
     width: 4rem;
     height: 0.5rem;
     background-color: rgb(176, 136, 7);
-    z-index: 777;
+    z-index: 577;
 }
 
 @media (min-width: 1200px) {

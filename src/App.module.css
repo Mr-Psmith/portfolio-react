@@ -12,13 +12,6 @@
     overflow: hidden;
 }
 
-/* .appSection1 {
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 12% 80% 18%;
-    margin: 0;
-} */
-
 a {
     color: rgb(176, 136, 7);
     text-decoration: none;
@@ -43,11 +36,6 @@ section {
     margin: auto 0;
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
 
 .App-notlink {
     font-size: 3rem;
@@ -61,20 +49,3 @@ section {
 .App-link:active {
     color: #282c34;
 }
-
-/* .wrapper {
-    box-sizing: border-box;
-    width: 80vw;
-    height: 72vh;
-    padding: 1rem 0;
-    margin: auto;
-} */
-
-.opened {
-    transition: transform 1s ease-in-out;
-    transform: translateX(0);
-  }
-  .closed {
-    transform: translateX(110vw);
-      transition: transform 1s ease-in-out;
-  }

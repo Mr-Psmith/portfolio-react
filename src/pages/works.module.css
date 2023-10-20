@@ -39,7 +39,6 @@
 
 .mainn img {
     width: 37vw;
-    /* height: 31.5vh; */
     border-radius: 15px;
     cursor: pointer;
 }
@@ -61,11 +60,7 @@
     font-size: 1.2rem;
 }
 
-/* @media (max-width: 1300px) {
-  .mainn {
-      
-  }
-} */
+
 @media (max-width: 1250px) {
   .mainn {
       left: 10vw;
@@ -86,11 +81,6 @@
     margin-top: 1rem;
     margin-bottom: 0;
   }
-  /* .mainn h4 {
-    border-bottom: rgb(127, 99, 5) 1px solid;
-    margin-top: 0;
-    margin-bottom: 1rem;
-} */
   .descript p{
     width: 80%;
   }
@@ -121,11 +111,6 @@
     margin-top: 1rem;
     margin-bottom: 0;
   }
-  /* .mainn h4 {
-    border-bottom: rgb(127, 99, 5) 1px solid;
-    margin-top: 0;
-    margin-bottom: 1rem;
-} */
   .descript p{
     width: 80%;
   }
@@ -201,11 +186,6 @@
     flex-direction: column;
     width: 100%;
   }
-  /* .mainn h4 {
-    border-bottom: rgb(127, 99, 5) 1px solid;
-    margin-top: 0;
-    margin-bottom: 1rem;
-} */
   .descript p{
     font-size: 0.8rem;
     width: 90%;
