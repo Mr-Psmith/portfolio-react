@@ -1,0 +1,14 @@
+.main__emailCP {
+    position: fixed;
+    top: 70vh;
+    left: 30vw;
+    width: 25vw;
+    height: 15vh;
+    border-radius: 15px;
+    background-color: rgba(7, 37, 37, 0.933);
+}
+.main__emailCP h1 {
+    color: rgb(176, 136, 7);
+    font-size: 1.5rem;
+    padding: 1vh 1vw;
+}

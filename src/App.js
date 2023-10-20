@@ -17,6 +17,7 @@ import Hamburger from "./components/mobile-nav-button";
 import { AnimatePresence } from "framer-motion";
 import MobileNavi from "./components/mobile-nav";
 import Loader from "./pages/loader";
+import EmailCopyPopup from "./utility/email-copy-popup";
 
 //Add a onClick to the div above all the li-s in the nav for all the booleans in the menus
 //Az emailt meg másolósra?
@@ -33,6 +34,8 @@ function App() {
     const [modalFrame, setModalFrame] = useState(false);
     const [backdrop, setBackdrop] = useState(false);
     const [mobileNavOpen, setmobileNavOpen] = useState(false);
+    const [text] = useState('psancthus@gmail.com');
+    const [emailCopyPopup, setEmailCopyPopup] = useState(false);
     
     function welcomeHandler() {
         setWelcomeSlide(true);
@@ -105,6 +108,15 @@ function App() {
         setBackdrop(true);
     }
 
+    const emailCopyPopupHandler = async () => {
+        setEmailCopyPopup(true);
+        setTimeout(() => {
+            setEmailCopyPopup(false);
+        }, 2500);
+        await navigator.clipboard.writeText(text);
+    }
+    
+
     //To unmount the loader after fireing
     setTimeout(() => {
         setLoader(false);
@@ -147,9 +159,10 @@ function App() {
                     <AnimatePresence>
                     {closeX ? <Close closeXPr={closeX} closeAllHandlerPr={closeAllHandler} /> : ""}
                     </AnimatePresence>
+                    {emailCopyPopup ? <EmailCopyPopup /> : ""}
                 </section>
                 <section className={classes.footer}>
-                    <Footer /* termsHandlerPr={termsHandler} */ />
+                    <Footer /* termsHandlerPr={termsHandler} */ emailCopyHandler={emailCopyPopupHandler}/>
                 </section>
             </section>
             <section>
