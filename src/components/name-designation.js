@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 
 function NameDesignation() {
-  const [nameSwitch, setNameSwitch] = useState("");
+  const [nameSwitch, setNameSwitch] = useState(true);
 
   function hoverHandler() {
     setTimeout(() => {
