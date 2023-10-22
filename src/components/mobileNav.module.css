@@ -61,6 +61,8 @@
     
     .socalPicsMobileNav {
         height: 7vh;
+        /* background-color: aliceblue;  */
+        margin: 0 0 2vh 0;
     }
     
     .fac,

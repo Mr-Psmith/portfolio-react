@@ -11,7 +11,7 @@
     width: 80vw;
     box-sizing: border-box;
     margin: auto;
-    z-index: 201;
+    z-index: 200;
     border: none;
     animation: slideIn 0.4s ease-in-out forwards;
 }

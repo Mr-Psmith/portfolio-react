@@ -36,10 +36,12 @@
     flex-direction: row;
     justify-content: space-around;
 }
-
-.mainn img {
+.image {
+  width: 100%;
+}
+.image img {
     width: 37vw;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -69,6 +71,7 @@
   }
   .mainn img {
     width: 50%;
+    border-radius: 5px;
   }
   .block1 {
     display: flex;
@@ -99,6 +102,8 @@
   }
   .mainn img {
     width: 60%;
+    
+    border-radius: 5px;
   }
   .block1 {
     display: flex;
@@ -124,12 +129,13 @@
 @media (max-width: 600px) {
   .mainn {
       left: -4vw;
-      top: 5vh;
-      height: 80vh;
+      top: 3vh;
+      height: 75vh;
       width: 90vw;
   }
   .mainn img {
     width: 60%;
+    border-radius: 5px;
   }
   .mainn h1 {
     font-size: 1.8rem;
@@ -162,12 +168,13 @@
 @media (max-width: 400px) {
   .mainn {
       left: -4vw;
-      top: 7vh;
-      height: 80vh;
+      top: 3vh;
+      height: 75vh;
       width: 90vw;
   }
   .mainn img {
     width: 50%;
+    border-radius: 5px;
   }
   .mainn h1 {
     font-size: 1.3rem;

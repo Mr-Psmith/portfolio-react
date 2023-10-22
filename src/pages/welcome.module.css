@@ -100,7 +100,8 @@
     .main {
         padding: 0;
         line-height: 3.2vh;
-        top: 7vh;
+        top: 3vh;
+        height: 70vh;
     }
     
     .main h1 {
@@ -154,5 +155,10 @@
         height: 0;
         border-right: 12rem solid rgb(3, 43, 43);
         border-top: 3rem solid transparent;
+    }
+}
+@media (max-width: 300px) {
+    .main {
+        height: 75vh;
     }
 }

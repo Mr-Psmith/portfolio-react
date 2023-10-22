@@ -11,7 +11,7 @@ function MobileNavi(props) {
 
     return (
         <>
-            <motion.div className={classes.mainContainerMobileNav} initial={{x: "100vw"}} animate={{x: props.mobileNavOpenPr ? "0vw" : 0, opacity: props.mobileNavOpenPr ? 1 : 0}} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{x: "100vw"}}>
+            <motion.div className={classes.mainContainerMobileNav} initial={{x: "100vw"}} animate={{x: props.mobileNavOpenPr ? "0vw" : 0, opacity: props.mobileNavOpenPr ? 1 : 0}} transition={{ duration: 0.35, type: "spring", bounce: 0.2 }} exit={{x: "100vw"}}>
                 <ul className={classes.ul}>
                     <li className={classes.li} onClick={props.welcomeHandlerPr}> 
                         Welcome

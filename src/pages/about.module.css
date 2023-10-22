@@ -160,7 +160,7 @@
 
 @media(max-width: 800px) {
     .aboutMain {
-        top: 7vh;
+        top: 3vh;
     }
     .aboutMain h1 {
         font-size: 1.5rem;
@@ -179,6 +179,12 @@
     }
 }
 @media (max-width: 600px) {
+    .aboutMain {
+        top: 3vh;
+        left: -5vw;
+        width: 90vw;
+        height: 75vh;
+    }
     ul {
         padding-inline-start: 3vw;
     }
@@ -248,6 +254,12 @@
     }
 }
 @media (max-width: 400px) {
+    .aboutMain {
+        top: 3vh;
+        left: -5vw;
+        width: 90vw;
+        height: 75vh;
+    }
     ul {
         padding-inline-start: 3vw;
     }
@@ -321,7 +333,7 @@
 }
 @media(max-width: 300px) {
     .aboutMain {
-        top: 7vh;
+        top: 3vh;
         left: -5vw;
         width: 90vw;
         height: 75vh;
