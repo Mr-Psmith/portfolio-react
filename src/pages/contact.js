@@ -36,7 +36,7 @@ return (
                                 rows="12"
                                 cols="30"
                                 defaultValue={
-                                    "This is a work in progress, as I am mainly a front-end developer, and I am still just training in back-end. But my email is psancthus@gmail.com. Thank you for your understanding."
+                                    "This is a work in progress, as I am mainly a front-end developer, and I am still just training in back-end. But my email is psancthus@gmail.com - which you can copy easily at any time by clicking the link on the bottom of the page. Thank you for your understanding."
                                 }
                             ></textarea>
                         </div>
