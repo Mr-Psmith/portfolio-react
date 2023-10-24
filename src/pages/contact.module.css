@@ -103,7 +103,7 @@
     justify-content: center;
 }
 .contactUnvisibleblock2 .picPlus {
-    width: 25rem;
+    width: 20vw;
     margin: 2vh auto;
     
 }
@@ -117,7 +117,7 @@
 .contactUnvisibleblock2 .inst,
 .contactUnvisibleblock2 .github,
 .contactUnvisibleblock2 .twitter {
-    width: 5rem;
+    width: 5vw;
     border-radius: 17px;
     cursor: pointer;
 }
@@ -137,40 +137,19 @@
     .contactMain {
         left: 10vw;
     }
-    .contactUnvisibleblock2 .picPlus {
-        width: 17rem;
-        margin: 0 auto;
-    }
-    .contactUnvisibleblock2 .fac,
-    .contactUnvisibleblock2 .inst,
-    .contactUnvisibleblock2 .github,
-    .contactUnvisibleblock2 .twitter {
-        width: 4rem;   
-    }
-}
-@media (max-width: 900px) {
-    .contactUnvisibleblock2 .picPlus {
-        width: 13rem;
-    }
-    .contactUnvisibleblock2 .fac,
-    .contactUnvisibleblock2 .inst,
-    .contactUnvisibleblock2 .github,
-    .contactUnvisibleblock2 .twitter {
-        width: 3rem;   
-    }
 }
 @media (max-width: 700px) {
     .contactMain {
         top: 3vh;
     }
     .contactUnvisibleblock2 .picPlus {
-        width: 11rem;
+        width: 30vw;
     }
     .contactUnvisibleblock2 .fac,
     .contactUnvisibleblock2 .inst,
     .contactUnvisibleblock2 .github,
     .contactUnvisibleblock2 .twitter {
-        width: 2rem;   
+        width: 7vw;   
     }
 }
 @media (max-width: 600px) {
@@ -202,12 +181,14 @@
         border-top: rgb(127, 99, 5) 7px solid;
         border-bottom: rgb(127, 99, 5) 7px solid;
     }
-    
+    .contactUnvisibleblock2 .picPlus {
+        width: 50vw;
+    }
     .contactUnvisibleblock2 .fac,
     .contactUnvisibleblock2 .inst,
     .contactUnvisibleblock2 .github,
     .contactUnvisibleblock2 .twitter {
-        width: 3.5rem;   
+        width: 17vw;   
     }
 }
 @media(max-width: 300px) {
@@ -221,7 +202,7 @@
     .contactUnvisibleblock2 .inst,
     .contactUnvisibleblock2 .github,
     .contactUnvisibleblock2 .twitter {
-        width: 3rem;   
+        width: 17vw;   
     }
 
 }

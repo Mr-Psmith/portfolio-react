@@ -36,7 +36,7 @@ function App() {
     const [mobileNavOpen, setmobileNavOpen] = useState(false);
     const [text] = useState('psancthus@gmail.com');
     const [emailCopyPopup, setEmailCopyPopup] = useState(false);
-    
+
     function welcomeHandler() {
         setWelcomeSlide(true);
         setWorksSlide(false);
@@ -115,7 +115,7 @@ function App() {
         }, 2500);
         await navigator.clipboard.writeText(text);
     }
-    
+
 
     //To unmount the loader after fireing
     setTimeout(() => {
@@ -132,37 +132,37 @@ function App() {
         <div className={classes.App}>
             <section className={classes.appSection1}>
                 <section className={classes.header}>
-                    {!mobileNavOpen ? <Hamburger hamburgerClickHandlerPr={hamburgerClickHandler} /> : ""} 
+                    {!mobileNavOpen ? <Hamburger hamburgerClickHandlerPr={hamburgerClickHandler} /> : ""}
                     <Header />
                     <AnimatePresence>
-                    {mobileNavOpen ? <MobileNavi mobileNavOpenPr={mobileNavOpen} welcomeHandlerPr={welcomeHandler} worksHandlerPr={worksHandler} aboutHandlerPr={aboutHandler} connectHandlerPr={connectHandler}/> : ""}
+                        {mobileNavOpen ? <MobileNavi mobileNavOpenPr={mobileNavOpen} welcomeHandlerPr={welcomeHandler} worksHandlerPr={worksHandler} aboutHandlerPr={aboutHandler} connectHandlerPr={connectHandler} /> : ""}
                     </AnimatePresence>
                 </section>
                 <section className={classes.body}>
-                    {loader ? <Loader /> : ""}  
+                    {loader ? <Loader /> : ""}
                     <AnimatePresence>
-                    {welcomeSlide ? welcomeScreen : ""}
+                        {welcomeSlide ? welcomeScreen : ""}
                     </AnimatePresence>
                     <AnimatePresence>
-                    {worksSlide ? worksScreen : ""}
+                        {worksSlide ? worksScreen : ""}
                     </AnimatePresence>
                     <AnimatePresence>
-                    {aboutSlide ? aboutScreen : ""}
+                        {aboutSlide ? aboutScreen : ""}
                     </AnimatePresence>
                     <AnimatePresence>
-                    {contactSlide ? contactScreen : ""}
+                        {contactSlide ? contactScreen : ""}
                     </AnimatePresence>
                     {modalFrame ? <ModalFrame /> : ""}
                     {backdrop ? <Backdrop closeBackdrHandlerPr={closeBackdrHandler} /> : ""}
                     {iframeOP ? <IframeOP iframeOPPr={iframeOP} /> : ""}
                     {iframeTan ? <IframeTan /> : ""}
                     <AnimatePresence>
-                    {closeX ? <Close closeXPr={closeX} closeAllHandlerPr={closeAllHandler} /> : ""}
+                        {closeX ? <Close closeXPr={closeX} closeAllHandlerPr={closeAllHandler} /> : ""}
                     </AnimatePresence>
                     {emailCopyPopup ? <EmailCopyPopup /> : ""}
                 </section>
                 <section className={classes.footer}>
-                    <Footer /* termsHandlerPr={termsHandler} */ emailCopyHandler={emailCopyPopupHandler}/>
+                    <Footer /* termsHandlerPr={termsHandler} */ emailCopyHandler={emailCopyPopupHandler} />
                 </section>
             </section>
             <section>
