@@ -17,13 +17,15 @@
 }
 
 .li {
-    margin: 0.1rem 0;
+    margin: 0.5rem 0.5rem;
     background-color: rgba(34, 32, 19, 0.372);
     border-radius: 10px;
-    padding: 0.5rem 0.5rem;
+    padding: 0.7rem 0.5rem;
     font-size: 1.5rem;
     color: rgb(176, 136, 7);
     cursor: pointer;
+    border-top: rgb(176, 136, 7) 1px solid;
+    border-bottom: rgb(176, 136, 7) 1px solid;
 }
 .li:hover,
 .a:hover {

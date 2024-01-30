@@ -8,7 +8,7 @@ import tan from "../img/tan.jpg";
 function Works(props) {
   return (
     <>
-      <motion.div animate={{x: props.worksSlidePr ? "-90%" : 0, opacity: props.worksSlidePr ? 1 : 0}} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{x: "90%"}} className={classes.mainWorks}>
+      <motion.div animate={{x: props.worksSlidePr ? "90%" : 0, opacity: props.worksSlidePr ? 1 : 0}} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{x: "90%"}} className={classes.mainWorks}>
         <div className={classes.mainn} id="works">
           <h1>Here are some of my works:</h1>
           <div className={classes.unvisibleblock}>

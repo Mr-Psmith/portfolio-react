@@ -5,11 +5,11 @@
     width: 80vw;
     height: 75vh;
     box-sizing: border-box;
-    background-color: rgba(34, 32, 19, 0.372);
+    background-color: rgba(34, 32, 19, 0.5);
     padding: 5vh 3vw;
     margin: auto;
     border-radius: 15px;
-    transform: translateX(100%);
+    transform: translateX(-100%);
     line-height: 3.5vh;
 }
 .main h1 {
@@ -44,7 +44,7 @@
     left: 0;
     width: 0;
     height: 0;
-    border-top: 5rem solid rgb(42, 35, 4);
+    border-top: 5rem solid rgba(50, 43, 8, 0.586);
     border-right: 17rem solid transparent;
 }
 .button__descr {
@@ -53,7 +53,7 @@
     width: 17rem;
     top: 0rem;
     left: 0;
-    color: rgb(176, 136, 7);
+    color: rgb(173, 141, 36);
     z-index: 5;
     background-color: transparent;
     border: none;
@@ -68,7 +68,7 @@
     left: 0;
     width: 0;
     height: 0;
-    border-right: 17rem solid rgb(3, 43, 43);
+    border-right: 17rem solid rgba(6, 41, 41, 0.548);
     border-top: 5rem solid transparent;
 }
 @media (max-width: 1200px) {

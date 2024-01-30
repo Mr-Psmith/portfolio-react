@@ -140,18 +140,19 @@ function App() {
                 </section>
                 <section className={classes.body}>
                     {loader ? <Loader /> : ""}
-                    <AnimatePresence>
+                    {/*  With animatepresence there is a visual glich sadly */}
+                    {/* <AnimatePresence>*/}
                         {welcomeSlide ? welcomeScreen : ""}
-                    </AnimatePresence>
-                    <AnimatePresence>
+                    {/* </AnimatePresence> */}
+                    {/* <AnimatePresence> */}
                         {worksSlide ? worksScreen : ""}
-                    </AnimatePresence>
-                    <AnimatePresence>
+                    {/* </AnimatePresence>
+                    <AnimatePresence> */}
                         {aboutSlide ? aboutScreen : ""}
-                    </AnimatePresence>
-                    <AnimatePresence>
+                    {/* </AnimatePresence>
+                    <AnimatePresence> */}
                         {contactSlide ? contactScreen : ""}
-                    </AnimatePresence>
+                    {/* </AnimatePresence> */}
                     {modalFrame ? <ModalFrame /> : ""}
                     {backdrop ? <Backdrop closeBackdrHandlerPr={closeBackdrHandler} /> : ""}
                     {iframeOP ? <IframeOP iframeOPPr={iframeOP} /> : ""}

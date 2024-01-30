@@ -5,7 +5,7 @@
     width: 80vw;
     height: 75vh;
     box-sizing: border-box;
-    background-color: rgba(34, 32, 19, 0.372);
+    background-color: rgba(34, 32, 19, 0.5);
     margin: auto;
     border-radius: 15px;
     display: flex;
@@ -14,7 +14,7 @@
     font-size: 1.4rem;
     text-align: left;
     z-index: 201;
-    transform: translateX(100%);
+    transform: translateX(-100%);
 }
 .contactUnvisibleblock1,
 .contactUnvisibleblock2 {

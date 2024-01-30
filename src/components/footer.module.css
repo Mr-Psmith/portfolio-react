@@ -1,5 +1,5 @@
 .footer {
-    position: absolute; left: 0; bottom: 0; /* hacky sol bec the app had an lower space which wasnt margin or anything lets see how long this will last */
+    position: absolute; left: 0; bottom: 0;
     margin: 0 auto;
     width: 100%;
     display: grid;

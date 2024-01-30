@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function Welcome(props) {
     return (
         <>
-            <motion.div animate={{ x: props.welcomeSlidePr ? "-90%" : 0, opacity: props.welcomeSlidePr ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }}>
+            <motion.div animate={{ x: props.welcomeSlidePr ? "90%" : 0, opacity: props.welcomeSlidePr ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }}>
                 <div className={classes.main} >
                     <h1>Hi, I am Paul.</h1>
                     <h3>I am a web developer - designer, writer, and builder</h3>

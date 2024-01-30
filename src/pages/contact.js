@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 function Contact(props) {
 return (
     <>
-        <motion.div animate={{ x: props.contactSlidePr ? "-90%" : 0, opacity: props.contactSlidePr ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }}>
+        <motion.div animate={{ x: props.contactSlidePr ? "90%" : 0, opacity: props.contactSlidePr ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }}>
             <div className={classes.contactMain}>
                 <div className={classes.contactUnvisibleblock1}>
                     <form method="get" encType="text/plain">

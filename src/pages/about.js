@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 function About(props) {
     return (
         <>
-            <motion.div animate={{ x: props.aboutSlidePr ? "-90%" : 0, opacity: props.aboutSlidePr ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }}>
+            <motion.div animate={{ x: props.aboutSlidePr ? "90%" : 0, opacity: props.aboutSlidePr ? 1 : 0 }} transition={{ duration: 0.4, type: "spring", bounce: 0.2 }} exit={{ x: "90%" }}>
                 <div className={classes.aboutMain}>
                     <div className={classes.aboutBlock1}>
                         <div>
