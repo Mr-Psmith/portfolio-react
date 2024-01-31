@@ -14,7 +14,7 @@
     font-size: 1.4rem;
     text-align: left;
     z-index: 201;
-    transform: translateX(-100%);
+    transform: translateX(-101%);
 }
 .contactUnvisibleblock1,
 .contactUnvisibleblock2 {
@@ -157,7 +157,7 @@
     .contactMain {
         position: fixed;
         top: 3vh;
-        left: 3vw;
+        transform: translateX(-98%);
         width: 85vw;
         height: 75vh;
         font-size: 1.4rem;
@@ -194,7 +194,7 @@
 @media(max-width: 300px) {
     .contactMain {
         top: 3vh;
-        left: -5vw;
+        transform: translateX(-95.5%);
         width: 90vw;
         height: 80vh;
     }

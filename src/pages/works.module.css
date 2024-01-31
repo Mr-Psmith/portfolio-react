@@ -10,7 +10,7 @@
     padding: 1vh 0;
     margin: auto;
     border-radius: 15px;
-    transform: translateX(-100%);
+    transform: translateX(-101%);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -102,7 +102,6 @@
   }
   .mainn img {
     width: 60%;
-    
     border-radius: 5px;
   }
   .block1 {
@@ -128,7 +127,7 @@
 }
 @media (max-width: 600px) {
   .mainn {
-      left: -4vw;
+      transform: translateX(-95.5%);
       top: 3vh;
       height: 75vh;
       width: 90vw;
@@ -167,7 +166,6 @@
 }
 @media (max-width: 400px) {
   .mainn {
-      left: -4vw;
       top: 3vh;
       height: 75vh;
       width: 90vw;

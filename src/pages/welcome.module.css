@@ -9,8 +9,9 @@
     padding: 5vh 3vw;
     margin: auto;
     border-radius: 15px;
-    transform: translateX(-100%);
+    transform: translateX(-101%);
     line-height: 3.5vh;
+    box-sizing: border-box;
 }
 .main h1 {
     margin: 5vh 0;
