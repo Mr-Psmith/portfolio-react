@@ -117,7 +117,7 @@ function App() {
     }
 
 
-    //To unmount the loader after fireing
+    //To unmount the loader after firing
     setTimeout(() => {
         setLoader(false);
     }, 3700);
@@ -125,7 +125,7 @@ function App() {
     const welcomeScreen = <Welcome contactButtonHandlerPr={contactButtonHandler} welcomeSlidePr={welcomeSlide} />;
     const worksScreen = <Works tanPrHandler={tanHandler} openOPHandlerPr={openOPHandler} worksHandlerppr={worksHandler} worksSlidePr={worksSlide} iframeOPPr={iframeOP} />;
     const aboutScreen = <About contactButtonHandlerPr={contactButtonHandler} aboutSlidePr={aboutSlide} />;
-    const contactScreen = <Contact contactSlidePr={contactSlide} />;
+    const contactScreen = <Contact contactSlidePr={contactSlide} emailButtonHandler={emailCopyPopupHandler} />;
 
 
     return (

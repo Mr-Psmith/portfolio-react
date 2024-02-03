@@ -26,6 +26,8 @@
     cursor: pointer;
     border-top: rgb(176, 136, 7) 1px solid;
     border-bottom: rgb(176, 136, 7) 1px solid;
+    border-left: transparent;
+    border-right: transparent;
 }
 .li:hover,
 .a:hover {

@@ -6,11 +6,17 @@
     height: 15vh;
     border-radius: 15px;
     background-color: rgba(7, 37, 37, 0.933);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .main__emailCP h1 {
     color: rgb(176, 136, 7);
-    font-size: 1.5rem;
-    padding: 1vh 1vw;
+    font-size: 2vh;
+    padding: 0.5vh 0.5vw;
+    line-height: 3vh;
 }
 
 @media (max-width: 800px) {
@@ -19,6 +25,9 @@
         left: 30vw;
         width: 57vw;
         height: 17vh;
+    }
+    .main__emailCP h1 {
+        font-size: 2.5vh;
     }
 }
 @media (max-width: 400px) {
@@ -35,8 +44,5 @@
         left: 10vw;
         width: 80vw;
         height: 20vh;
-    }
-    .main__emailCP h1 {
-        font-size: 1.2rem;
     }
 }
