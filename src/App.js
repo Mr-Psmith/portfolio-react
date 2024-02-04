@@ -69,7 +69,6 @@ function App() {
         setmobileNavOpen(false);
         setBackdrop(false);
     }
-
     function openOPHandler() {
         setModalFrame(true);
         setBackdrop(true);

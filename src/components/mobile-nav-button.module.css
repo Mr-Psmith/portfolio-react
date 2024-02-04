@@ -10,6 +10,7 @@
     flex-direction: column;
     justify-content: space-around;
     cursor: pointer;
+    z-index: 199;
 }
 .hamburgerLines {
     display: block;
@@ -19,7 +20,7 @@
     width: 4rem;
     height: 0.5rem;
     background-color: rgb(176, 136, 7);
-    z-index: 577;
+    z-index: 199;
 }
 
 @media (min-width: 1200px) {
