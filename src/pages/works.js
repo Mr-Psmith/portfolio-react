@@ -3,7 +3,7 @@ import "./transition.css";
 import { motion } from "framer-motion";
 
 import oldPortf from "../img/works-oldPortf.jpg";
-import tan from "../img/tan.jpg";
+import tan from "../img/photographerPortf.jpg";
 
 function Works(props) {
   return (

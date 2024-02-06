@@ -137,8 +137,13 @@
     justify-content: center;
 }
 .contactUnvisibleblock2 .picPlus {
+    position: relative;
+    top: 5vh;
     width: 20vw;
     margin: 2vh auto;
+    border-radius: 15px;
+    background: linear-gradient(rgba(5.1, 23.5, 23.5, 0.933), rgba(5.1, 23.5, 23.5, 0.933)) no-repeat;
+    filter: brightness(80%);
     
 }
 .contactUnvisibleblock2__icon_iconsSry {
@@ -150,22 +155,20 @@
 .contactUnvisibleblock2 .fac,
 .contactUnvisibleblock2 .inst,
 .contactUnvisibleblock2 .github,
-.contactUnvisibleblock2 .twitter {
-    width: 5vw;
-    border-radius: 17px;
+.contactUnvisibleblock2 .twitter,
+.contactUnvisibleblock2 .linkedin {
+    width: 4vw;
+    border-radius: 170px;
     cursor: pointer;
 }
 .contactUnvisibleblock2 .fac:hover,
 .contactUnvisibleblock2 .inst:hover,
 .contactUnvisibleblock2 .twitter:hover,
-.contactUnvisibleblock2 .github:hover {
+.contactUnvisibleblock2 .github:hover,
+.contactUnvisibleblock2 .linkedin:hover {
     background-color: rgb(3, 43, 43);
 }
 
-.contactUnvisibleblock2 .github,
-.contactUnvisibleblock2 .twitter {
-    border-radius: 200px;
-}
 
 @media (max-width: 1200px) {
     .contactMain {
@@ -182,7 +185,8 @@
     .contactUnvisibleblock2 .fac,
     .contactUnvisibleblock2 .inst,
     .contactUnvisibleblock2 .github,
-    .contactUnvisibleblock2 .twitter {
+    .contactUnvisibleblock2 .twitter,
+    .contactUnvisibleblock2 .linkedin {
         width: 7vw;   
     }
 }
@@ -231,7 +235,8 @@
     .contactUnvisibleblock2 .fac,
     .contactUnvisibleblock2 .inst,
     .contactUnvisibleblock2 .github,
-    .contactUnvisibleblock2 .twitter {
+    .contactUnvisibleblock2 .twitter,
+    .contactUnvisibleblock2 .linkedin {
         width: 15vw;   
     }
 }

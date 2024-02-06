@@ -1,13 +1,13 @@
 import classes from "./contact.module.css";
-import facPic from "../img/fac.jpg";
-import inst from "../img/insta.png";
-import twit from "../img/twit.png";
-import gith from "../img/github.png";
-import pic from "../img/f037.png";
+import pic from "../img/5.png"; 
+import facPic from "../img/facebookGold.png";
+import gith from "../img/github130Gold.png";
+import inst from "../img/instaGold.png";
+import twit from "../img/twitterGold.png";
+import linkedin from "../img/linkedinGold.png";
 import "./transition.css"
 import { motion } from "framer-motion";
-import { useState } from "react";
-import EmailCopyPopup from "../utility/email-copy-popup";
+//import EmailCopyPopup from "../utility/email-copy-popup";
 
 function Contact(props) {
 
@@ -75,12 +75,14 @@ function Contact(props) {
                                 <a href="https://twitter.com/messages/1581314633595494400-1581314633595494400?text=" target="_blank" rel="noreferrer">
                                     <img src={twit} alt="Twit" className={classes.twitter}></img>
                                 </a>
+                                <a href="https://www.linkedin.com/in/pal-szenthe-3b182b14b/" target="_blank" rel="noreferrer">
+                                    <img src={linkedin} alt="Twit" className={classes.linkedin}></img>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </motion.div>
-            {/* </CSSTransition> */}
         </>
     );
 }

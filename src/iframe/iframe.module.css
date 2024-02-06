@@ -13,6 +13,7 @@
     z-index: 201;
     border: rgb(127, 99, 5) 3px solid;
     animation: slideIn 0.4s ease-in-out forwards;
+    border-radius: 20px;
 }
 
 .mainIframesFramer {

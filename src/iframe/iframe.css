@@ -8,6 +8,7 @@
     margin: auto;
     z-index: 201;
     border: rgb(127, 99, 5) 3px solid;
+    border-radius: 30px;
 }
 
 .open {

@@ -31,14 +31,16 @@
 .fac,
 .inst,
 .github,
-.twitter {
+.twitter,
+.linkedin {
     width: 4rem;
     border-radius: 15px;
     cursor: pointer;
 }
 .fac:hover,
 .inst:hover,
-.twitter:hover {
+.twitter:hover,
+.linkedin:hover {
     background-color: rgb(3, 43, 43);
 }
 .github:hover {

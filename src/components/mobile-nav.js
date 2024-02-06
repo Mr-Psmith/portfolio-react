@@ -2,10 +2,11 @@ import classes from "./mobileNav.module.css";
 
 import { motion } from "framer-motion";
 
-import facPic from "../img/fac.jpg";
-import gith from "../img/github.png";
-import inst from "../img/insta.png";
-import twit from "../img/twit.png";
+import facPic from "../img/facebookGold.png";
+import gith from "../img/github130Gold.png";
+import inst from "../img/instaGold.png";
+import twit from "../img/twitterGold.png";
+import linkedin from "../img/linkedinGold.png";
 
 function MobileNavi(props) {
 
@@ -36,9 +37,11 @@ function MobileNavi(props) {
                             <a href="https://instagram.com/..." target="_blank"  rel="noreferrer">
                                 <img src={inst} alt="Inst" className={classes.inst}></img>
                             </a>
-
                             <a href="https://twitter.com/messages/1581314633595494400-1581314633595494400?text=" target="_blank"  rel="noreferrer">
                                 <img src={twit} alt="Twit" className={classes.twitter}></img>
+                            </a>
+                            <a href="https://twitter.com/messages/1581314633595494400-1581314633595494400?text=" target="_blank"  rel="noreferrer">
+                                <img src={linkedin} alt="Twit" className={classes.linkedin}></img>
                             </a>
                     </div>
             </motion.div>

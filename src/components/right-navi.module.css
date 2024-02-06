@@ -64,23 +64,20 @@
 .fac,
 .inst,
 .github,
-.twitter {
+.twitter,
+.linkedin {
     width: 2rem;
-    border-radius: 10px;
+    border-radius: 200px;
     cursor: pointer;
 }
 .fac:hover,
 .inst:hover,
-.twitter:hover {
+.twitter:hover,
+.github:hover,
+.linkedin:hover {
     background-color: rgb(3, 43, 43);
 }
-.github:hover {
-    background-color: rgb(3, 43, 43);
-}
-.github,
-.twitter {
-    border-radius: 200px;
-}
+
 
 @media (max-width: 1200px) {
     .socalPics {
@@ -91,7 +88,8 @@
     .fac,
     .inst,
     .github,
-    .twitter {
+    .twitter,
+    .linkedin  {
         width: 3rem;
         padding: 0.4rem 0;
     }

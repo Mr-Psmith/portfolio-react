@@ -43,10 +43,11 @@
     width: 37vw;
     border-radius: 10px;
     cursor: pointer;
+    border: 3px solid rgb(116, 90, 7);
 }
 
 .mainn img:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
 }
 
 .descript {
