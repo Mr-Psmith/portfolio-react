@@ -1,11 +1,12 @@
 .closeXMain {
-    height: 3rem;
-    width: 3rem;
+    height: 4rem;
+    width: 4rem;
     background-image: url("../img/vector-cross.png");
     background-size: cover;
     position: fixed;
+    border-radius: 30px;
     right: 7vw;
-    top: 10vh;
+    top: 6vh;
     z-index: 201;
     cursor: pointer;
     background-color: rgb(127, 99, 5);
