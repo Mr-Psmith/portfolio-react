@@ -141,16 +141,16 @@ function App() {
                     {loader ? <Loader /> : ""}
                     {/*  With animatepresence there is a visual glich sadly */}
                     {/* <AnimatePresence>*/}
-                        {welcomeSlide ? welcomeScreen : ""}
+                    {welcomeSlide ? welcomeScreen : ""}
                     {/* </AnimatePresence> */}
                     {/* <AnimatePresence> */}
-                        {worksSlide ? worksScreen : ""}
+                    {worksSlide ? worksScreen : ""}
                     {/* </AnimatePresence>
                     <AnimatePresence> */}
-                        {aboutSlide ? aboutScreen : ""}
+                    {aboutSlide ? aboutScreen : ""}
                     {/* </AnimatePresence>
                     <AnimatePresence> */}
-                        {contactSlide ? contactScreen : ""}
+                    {contactSlide ? contactScreen : ""}
                     {/* </AnimatePresence> */}
                     {modalFrame ? <ModalFrame /> : ""}
                     {backdrop ? <Backdrop closeBackdrHandlerPr={closeBackdrHandler} /> : ""}
