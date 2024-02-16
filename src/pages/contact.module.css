@@ -169,6 +169,11 @@
     background-color: rgb(3, 43, 43);
 }
 
+@media (min-width: 1200px) {
+    .contactMain {
+        overflow-y: scroll;
+    }
+}
 
 @media (max-width: 1200px) {
     .contactMain {
